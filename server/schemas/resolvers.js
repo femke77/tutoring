@@ -6,9 +6,8 @@ const resolvers = {
   Query: {
     me: async (_, __, context) => {
       if (context.user) {
-    
         const userData = await User.findByPk(context.user.id);
-      
+
         return userData;
       }
 
@@ -24,7 +23,7 @@ const resolvers = {
     },
 
     login: async (_, { email, password }) => {
-      const user = await User.findOne({where:{ email: email }});
+      const user = await User.findOne({ where: { email: email } });
 
       if (!user) {
         throw new AuthenticationError("No user found with this email address");
