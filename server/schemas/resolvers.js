@@ -1,48 +1,46 @@
-const { AuthenticationError } = require('apollo-server-express');
-const { User, Blog } = require('../models');
-const { signToken } = require('../utils/auth');
+const { AuthenticationError } = require("apollo-server-express");
+const { User } = require("../models");
+const { signToken } = require("../utils/auth");
 
 const resolvers = {
-	Query: {
-	
-		me: async (_, __, context) => {
-			if (context.user) {
-				const userData = await User.findOne({ _id: context.user._id }).select('-__v -password').populate('blogs');
+  Query: {
+    me: async (_, __, context) => {
+      if (context.user) {
+    
+        const userData = await User.findByPk(context.user.id);
+      
+        return userData;
+      }
 
-				return userData;
-			}
+      throw new AuthenticationError("Not logged in");
+    },
+  },
 
-			throw new AuthenticationError('Not logged in');
-		}
-	},
+  Mutation: {
+    addUser: async (_, args) => {
+      const user = await User.create(args);
+      const token = signToken(user);
+      return { token, user };
+    },
 
-	Mutation: {
-		addUser: async (_, args) => {
-		  const user = await User.create(args);
-		  const token = signToken(user);
-		  return { token, user };
-		},
+    login: async (_, { email, password }) => {
+      const user = await User.findOne({where:{ email: email }});
 
-		login: async (_, { email, password }) => {
-		  const user = await User.findOne({ email });
-	
-		  if (!user) {
-			throw new AuthenticationError('No user found with this email address');
-		  }
-	
-		  const correctPw = await user.isCorrectPassword(password);
-	
-		  if (!correctPw) {
-			throw new AuthenticationError('Incorrect credentials');
-		  }
-	
-		  const token = signToken(user);
-	
-		  return { token, user };
-		},
+      if (!user) {
+        throw new AuthenticationError("No user found with this email address");
+      }
 
-		
-	  },
+      const correctPw = await user.checkPassword(password);
+
+      if (!correctPw) {
+        throw new AuthenticationError("Incorrect credentials");
+      }
+
+      const token = signToken(user);
+
+      return { token, user };
+    },
+  },
 };
 
 module.exports = resolvers;
