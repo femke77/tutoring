@@ -7,7 +7,6 @@ const resolvers = {
     me: async (_, __, context) => {
       if (context.user) {
         const userData = await User.findByPk(context.user.id);
-
         return userData;
       }
 

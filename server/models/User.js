@@ -21,14 +21,29 @@ User.init(
     first_name: {
       type: DataTypes.STRING,
       allowNull: false,
+      required: true
     },
     last_name: {
       type: DataTypes.STRING,
       allowNull: false,
+      required: true
+    },
+    phone: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      unique: true,
+      required: true
+    },
+    zip_code: {
+      type: DataTypes.STRING,
+      required: true,
+      allowNull: false
     },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
+      required: true, 
+      unique: true,
       validate: {
         isEmail: true,
       },
@@ -43,7 +58,6 @@ User.init(
   },
   {
     hooks: {
-      // set up beforeCreate lifecycle "hook" functionality
       beforeCreate: async (newUserData) => {
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
         return newUserData;
