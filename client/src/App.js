@@ -1,6 +1,9 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import NoMatch from "./components/NoMatch";
 import React from "react";
 import {
   ApolloClient,
@@ -39,6 +42,9 @@ function App() {
             <Header />
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/about" element={<About />} />
+              <Route path="*" element={<NoMatch />} />
             </Routes>
           </div>
           <Footer />
