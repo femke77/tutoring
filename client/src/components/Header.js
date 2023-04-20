@@ -5,9 +5,11 @@ function Header() {
     <header>
       <h2>MERN Tutoring Session post Boot Camp Graduation</h2>
       <div>
+        {" "}
+        <Link to="/">Schedule</Link>
         <Link to="/about">About</Link>
         <Link to="/contact ">Contact</Link>
-        <Link to="/ ">Schedule</Link>
+ 
       </div>
     </header>
   );

@@ -30,14 +30,10 @@ User.init(
     },
     phone: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
       unique: true,
-      required: true
-    },
-    zip_code: {
-      type: DataTypes.STRING,
       required: true,
-      allowNull: false
+
     },
     email: {
       type: DataTypes.STRING,
@@ -50,7 +46,7 @@ User.init(
     },
     password: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
       validate: {
         len: [6],
       },
