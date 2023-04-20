@@ -1,7 +1,10 @@
 No need for logging in  ???
 paypal for payment on server => dataSources
-front end form to fill out - calendly to my db? how 
-to store ? Ask them for all the info each time, 
+front end form to fill out - calendly to my db? 
+how to store ? Ask them for all the info each time, 
 or to store data, log in possible??? 
 
+
 emailjs for contact form.
+new domain
+

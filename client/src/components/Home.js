@@ -1,8 +1,11 @@
+import Calendly from "./Calendly";
+
 function Home() {
     return (
-        <>
-            Home
-        </>
+        <main>
+            <Calendly/>
+          
+        </main>
     )
 }
 
