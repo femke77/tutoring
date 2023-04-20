@@ -1,9 +1,9 @@
 No need for logging in  ???
-paypal for payment on server => dataSources
-front end form to fill out - calendly to my db? 
-how to store ? Ask them for all the info each time, 
-or to store data, log in possible??? 
+paypal for payment via Calendly
+Calendly API in datasources
+keep my own db? calendly api to my db? 
 
+About
 
 emailjs for contact form.
 new domain
