@@ -8,7 +8,7 @@ function Calendly() {
         onEventTypeViewed: () => console.log("onEventTypeViewed"),
         onEventScheduled: (e) => console.log(e.data.payload),
       });
-      
+
     return (
         <>
            <InlineWidget url="https://calendly.com/megmeyers/tutorial-session" />

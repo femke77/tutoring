@@ -14,7 +14,7 @@ const NoMatch = () => {
         <p>Oops, we couldn't find that page!</p>
       </div>
 
-      <a href="http://vecteezy.com">Image by Vecteezy.com</a>
+      <a href="http://vecteezy.com">image by vecteezy.com</a>
     </div>
   );
 };

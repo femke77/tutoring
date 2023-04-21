@@ -14,5 +14,8 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^8.0.1"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.11.0"
   }
 }
