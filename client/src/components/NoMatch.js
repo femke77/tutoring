@@ -1,4 +1,4 @@
-import cat from "../assets/cat.webp";
+import cat from "../assets/output.png";
 
 const NoMatch = () => {
   return (

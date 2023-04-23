@@ -12,4 +12,4 @@ Blog
 
 new domain
 
-better css - looks like shit
+media queries

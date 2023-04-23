@@ -31,7 +31,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 15px 0 15px;
-  font-size: 52px;
+  font-size: 58px;
 }
 
 header>div {
@@ -48,7 +48,7 @@ header>div {
   flex-direction: column;
   text-align: end;
   padding-right: 15px;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 
 .no-match-container a {
@@ -60,15 +60,18 @@ header>div {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 40%;
+  margin-top: -20px;
 }
 
 .no-match>p {
   font-size: 36pt;
-  margin-top: 18px;
+  margin-top: 2px;
 }
 
+
 footer {
-  height: 12px;
+  height: 6px;
   padding: 26px;
   font-size: 18px;
   text-align: center;
@@ -110,7 +113,7 @@ form div input,
 form div textarea {
   width: 900px;
   height: 30px;
-  border: #EB4E6C 1px solid;
+  border: black 1px solid;
 
 }
 
