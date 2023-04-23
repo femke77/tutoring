@@ -12,7 +12,7 @@ body {
   font-size: 16pt;
   overflow-x: hidden;
   font-family: 'Courgette';
-  background-image: url("./assets/bg2.jpg");
+  background-image: url("./assets/bg4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -32,6 +32,7 @@ header {
   align-items: center;
   padding: 0 15px 0 15px;
   font-size: 58px;
+  border-top: 10px solid black;
 }
 
 header>div {
@@ -82,7 +83,9 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: gainsboro;
+  background-color: #E0E0E0;
+  opacity: 0.95;
+  border-top: 1px solid black;
 }
 
 /* header,
@@ -114,6 +117,7 @@ form div textarea {
   width: 900px;
   height: 30px;
   border: black 1px solid;
+  font-family: 'Courgette';
 
 }
 
@@ -123,4 +127,5 @@ form div textarea {
 
 #send-email {
   font-size: 20px;
+  font-family: 'Courgette';
 }
