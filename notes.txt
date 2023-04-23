@@ -1,10 +1,15 @@
-No need for logging in  ???
+No need for logging in  ??? yet
 paypal for payment via Calendly
 Calendly API in datasources
-keep my own db? calendly api to my db? 
+keep my own db? calendly api to my db? yes. eventually
+get the calendly api to put the data regarding the person and the appointment
+in the database. 
+what is the paypal api going to give you? what about receipts and what about credits?
+t&c prior to scheduling? 
 
 About
+Blog
 
-emailjs for contact form.
 new domain
 
+better css - looks like shit

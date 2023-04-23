@@ -11,11 +11,14 @@ body {
   position: relative;
   font-size: 16pt;
   overflow-x: hidden;
-  font-family: 'Lilita One';
+  font-family: 'Courgette';
+  background-image: url("./assets/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a {
-  color: white;
+  color: black;
 }
 
 a:hover {
@@ -24,12 +27,11 @@ a:hover {
 
 header {
   min-height: 80px;
-  font-size: 50px;
-  font-weight: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 15px 0 15px;
+  font-size: 52px;
 }
 
 header>div {
@@ -39,6 +41,7 @@ header>div {
   flex-wrap: wrap;
   font-size: 24px;
 }
+
 
 .no-match-container {
   display: flex;
@@ -65,7 +68,7 @@ header>div {
 }
 
 footer {
-  height: 30px;
+  height: 12px;
   padding: 26px;
   font-size: 18px;
   text-align: center;
@@ -76,13 +79,15 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: gainsboro;
 }
 
-header, footer {
+/* header,
+footer {
   border-top: #EB4E6C 5pt solid;
   background-color: rgb(91, 85, 85);
   color: white;
-}
+} */
 
 .hidden-toast {
   display: none;
@@ -101,8 +106,8 @@ form div {
   padding-bottom: 25px;
 }
 
-
-form div input, form div textarea {
+form div input,
+form div textarea {
   width: 900px;
   height: 30px;
   border: #EB4E6C 1px solid;

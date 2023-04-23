@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Terms from "./components/Terms";
 import NoMatch from "./components/NoMatch";
 import React from "react";
 import {
@@ -43,6 +44,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="/terms" element={<Terms />} />
             <Route path="*" element={<NoMatch />} />
           </Routes>
         </>
