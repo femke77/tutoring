@@ -9,11 +9,9 @@ function Calendly() {
         onEventScheduled: (e) => console.log(e.data.payload),
       });
 
-    return (
-        <>
-           <InlineWidget url="https://calendly.com/megmeyers/tutorial-session" />
-        </>
-    )
+    return <InlineWidget url="https://calendly.com/megmeyers/tutorial-session" />
+ 
+    
 }
 
 export default Calendly;

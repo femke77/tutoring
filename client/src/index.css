@@ -145,6 +145,7 @@ form div textarea {
   margin: 0 auto;
   font-size: 20pt;
   padding-top: 10px;
+  /* background-color: #E1E1E1; */
 }
 
 main {
@@ -161,7 +162,7 @@ main {
   width: 80px;
 }
 
-@media screen and (max-width: 1548px) {
+@media screen and (max-width: 1592px) {
 
   header .links {
     display: flex;
@@ -202,7 +203,4 @@ main {
 
   }
 
-  header a {
-    margin-bottom: 7px;
-  }
 }
