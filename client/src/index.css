@@ -150,8 +150,18 @@ main {
   padding-bottom: 60px;
 }
 
-@media screen and (max-width: 1550px)  {
-  
+.subhead {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+}
+
+@media screen and (max-width: 1550px) {
+
   header .links {
     display: flex;
     flex-direction: column;
@@ -164,25 +174,26 @@ main {
   }
 }
 
-@media screen and (max-width: 788px)  {
-  
+@media screen and (max-width: 788px) {
+
   header .links {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* flex-basis: 77%; */
-
   }
-
-
 }
 
-@media screen and (max-width: 442px)  {
-  
+@media screen and (max-width: 950px) {
+  /* the form needs to be small */
+}
+
+@media screen and (max-width: 442px) {
+
   header {
     display: flex;
     flex-direction: column;
   }
+
   header .links {
     display: flex;
     flex-direction: column;
