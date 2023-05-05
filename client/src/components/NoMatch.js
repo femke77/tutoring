@@ -6,8 +6,8 @@ const NoMatch = () => {
 
       <div className="no-match">
         <img
-          height="600"
-          width="600"
+          height="500"
+          width="500"
           src={cat}
           alt="cartoon cat with mouth wide open"
         />

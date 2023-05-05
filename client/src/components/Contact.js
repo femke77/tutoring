@@ -3,7 +3,6 @@ import emailjs from "@emailjs/browser";
 import { validateEmail } from "../utils/helpers";
 
 export default function Contact() {
-  
   const [formState, setFormState] = useState({
     user_name: "",
     user_email: "",
@@ -11,6 +10,7 @@ export default function Contact() {
     message: "",
   });
 
+  const [valid, setValid] = useState(false)
   const [hiddenState, setHiddenState] = useState(true);
 
   const [errorMessage, setErrorMessage] = useState("");
@@ -46,29 +46,30 @@ export default function Contact() {
   };
 
   const handleValidation = (e) => {
-    if (e.target.name === "email") {
+    if (e.target.name === "user_email") {
       const isValid = validateEmail(e.target.value);
       if (!isValid) {
         setErrorMessage("Your email is invalid.");
+        setValid(false)
       } else {
         setErrorMessage("");
+        setValid(true)     
       }
-    } else {
+    } else if (e.target.name === "user_name"){
+      if (!e.target.value.length){
+        setErrorMessage("Please provide your name.")
+      }
+    } else if (e.target.name === "message"){
       if (!e.target.value.length) {
-        setErrorMessage(`Your ${e.target.name} is required.`);
-      } else {
-        setErrorMessage("");
+        setErrorMessage("Don't forget your message!")
       }
-    }
-    if (!errorMessage) {
-      // setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log("Handle Form", formState);
     }
   };
 
   return (
     <form ref={form} onSubmit={sendEmail}>
       <div>
+        <p>For urgent matters please put "urgent" in the subject.</p>
         <input
           type="text"
           value={user_name}
@@ -109,7 +110,12 @@ export default function Contact() {
       </div>
 
       <div className="send-button">
-        <input disabled={!(message && user_email && user_name)} type="submit" value="Send Message" id="send-email" />
+        <input
+          disabled={!(message && user_email && user_name && valid)}
+          type="submit"
+          value="Send Message"
+          id="send-email"
+        />
       </div>
       <div className={hiddenState ? "hidden-toast" : ""}>Email Sent.</div>
       {errorMessage && <div>{errorMessage}</div>}
