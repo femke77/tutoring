@@ -38,7 +38,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <>
+        <main>
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -47,7 +47,7 @@ function App() {
             <Route path="/terms" element={<Terms />} />
             <Route path="*" element={<NoMatch />} />
           </Routes>
-        </>
+        </main>
         <Footer />
       </Router>
     </ApolloProvider>

@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import { validateEmail } from "../utils/helpers";
 
 export default function Contact() {
+  
   const [formState, setFormState] = useState({
     user_name: "",
     user_email: "",
@@ -13,6 +14,7 @@ export default function Contact() {
   const [hiddenState, setHiddenState] = useState(true);
 
   const [errorMessage, setErrorMessage] = useState("");
+
   const { user_name, user_email, subject, message } = formState;
 
   function handleChange(e) {

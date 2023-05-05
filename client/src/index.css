@@ -33,16 +33,30 @@ header {
   padding: 0 15px 0 15px;
   font-size: 58px;
   border-top: 10px solid black;
+  margin-bottom: 40px;
 }
 
-header>div {
+header h1 {
+  font-size: 54px;
+  margin-bottom: 2px;
+}
+
+header p {
+  font-size: 20px;
+}
+
+header .ident {
   display: flex;
-  justify-content: space-around;
-  width: 35%;
-  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+header .links {
   font-size: 24px;
 }
 
+header a {
+  margin: 0 15px 0 15px;
+}
 
 .no-match-container {
   display: flex;
@@ -72,8 +86,8 @@ header>div {
 
 
 footer {
-  height: 6px;
-  padding: 26px;
+  max-height: 12px;
+  padding: 14px;
   font-size: 18px;
   text-align: center;
   position: absolute;
@@ -83,17 +97,10 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #E0E0E0;
+  background-color: #C7C7C7;
   opacity: 0.95;
-  border-top: 1px solid black;
-}
 
-/* header,
-footer {
-  border-top: #EB4E6C 5pt solid;
-  background-color: rgb(91, 85, 85);
-  color: white;
-} */
+}
 
 .hidden-toast {
   display: none;
@@ -128,4 +135,29 @@ form div textarea {
 #send-email {
   font-size: 20px;
   font-family: 'Courgette';
+}
+
+.about,
+.terms {
+  width: 83%;
+  margin: 0 auto;
+  font-size: 20pt;
+  padding-top: 10px;
+}
+
+main {
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 1496px)  {
+  
+  header .links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  header a {
+    margin-bottom: 7px;
+  }
 }

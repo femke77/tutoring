@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <header>
-      <p>Meg Meyers - MERN Stack Tutoring</p>
-      <div>
-        <Link to="/">Schedule</Link>{" "}
-        <Link to="/about">About</Link>{" "}
-        <Link to="/contact ">Contact</Link>
+      <div className="ident">
+        <h1>Meg Meyers - MERN Stack Tutoring</h1>
+        <p>Lucky Cat Ventures, LLC</p>
+      </div>
+      <div className="links">
+        <Link to="/">Schedule</Link> <Link to="/terms ">Terms of Service</Link>
+        <Link to="/about">About Me</Link> <Link to="/contact ">Contact</Link>
       </div>
     </header>
   );
