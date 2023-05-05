@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from '../assets/logo.png'
+import logo from "../assets/logo.png";
 function Header() {
   return (
     <header>
@@ -7,13 +7,13 @@ function Header() {
         <h1>Meg Meyers - MERN Stack Tutoring</h1>
         <div className="subhead">
           <img src={logo} className="logo" />
-        <p>Lucky Cat Ventures, LLC</p>
-     </div>
+          <p>Lucky Cat Ventures, LLC</p>
+        </div>
       </div>
       <div className="links">
-        <Link to="/">-Schedule</Link> 
+        <Link to="/">-Schedule</Link>
         <Link to="/terms ">-Terms of Service</Link>
-        <Link to="/about">-About Me</Link> 
+        <Link to="/about">-About Me</Link>
         <Link to="/contact ">-Contact</Link>
         <Link to="/blog">-Blog</Link>
       </div>

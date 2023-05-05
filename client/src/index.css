@@ -99,6 +99,7 @@ footer {
   align-items: center;
   background-color: #C7C7C7;
   opacity: 0.95;
+  border-bottom: 5px solid black;
 
 }
 
@@ -160,7 +161,7 @@ main {
   width: 80px;
 }
 
-@media screen and (max-width: 1550px) {
+@media screen and (max-width: 1548px) {
 
   header .links {
     display: flex;

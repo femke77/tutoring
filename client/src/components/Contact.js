@@ -61,7 +61,7 @@ export default function Contact() {
       }
     }
     if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
+      // setFormState({ ...formState, [e.target.name]: e.target.value });
       console.log("Handle Form", formState);
     }
   };
@@ -72,7 +72,7 @@ export default function Contact() {
         <input
           type="text"
           value={user_name}
-          name="name"
+          name="user_name"
           placeholder="name"
           onChange={handleChange}
           onBlur={handleValidation}
@@ -83,7 +83,7 @@ export default function Contact() {
         <input
           type="email"
           value={user_email}
-          name="email"
+          name="user_email"
           placeholder="email"
           onChange={handleChange}
           onBlur={handleValidation}
@@ -109,7 +109,7 @@ export default function Contact() {
       </div>
 
       <div className="send-button">
-        <input type="submit" value="Send Message" id="send-email" />
+        <input disabled={!(message && user_email && user_name)} type="submit" value="Send Message" id="send-email" />
       </div>
       <div className={hiddenState ? "hidden-toast" : ""}>Email Sent.</div>
       {errorMessage && <div>{errorMessage}</div>}
