@@ -5,6 +5,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Terms from "./components/Terms";
 import NoMatch from "./components/NoMatch";
+import Blog from "./components/Blog"
 import React from "react";
 import {
   ApolloClient,
@@ -45,6 +46,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
             <Route path="/terms" element={<Terms />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="*" element={<NoMatch />} />
           </Routes>
         </main>

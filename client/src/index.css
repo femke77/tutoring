@@ -138,7 +138,8 @@ form div textarea {
 }
 
 .about,
-.terms {
+.terms,
+.blog {
   width: 83%;
   margin: 0 auto;
   font-size: 20pt;
@@ -149,12 +150,44 @@ main {
   padding-bottom: 60px;
 }
 
-@media screen and (max-width: 1496px)  {
+@media screen and (max-width: 1550px)  {
   
   header .links {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    margin: 20px 30px 0 0;
+  }
+
+  header a {
+    margin-bottom: 7px;
+  }
+}
+
+@media screen and (max-width: 788px)  {
+  
+  header .links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-basis: 77%; */
+
+  }
+
+
+}
+
+@media screen and (max-width: 442px)  {
+  
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header .links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
   }
 
   header a {

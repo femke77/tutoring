@@ -8,8 +8,11 @@ function Header() {
         <p>Lucky Cat Ventures, LLC</p>
       </div>
       <div className="links">
-        <Link to="/">Schedule</Link> <Link to="/terms ">Terms of Service</Link>
-        <Link to="/about">About Me</Link> <Link to="/contact ">Contact</Link>
+        <Link to="/">-Schedule</Link> 
+        <Link to="/terms ">-Terms of Service</Link>
+        <Link to="/about">-About Me</Link> 
+        <Link to="/contact ">-Contact</Link>
+        <Link to="/blog">-Blog</Link>
       </div>
     </header>
   );

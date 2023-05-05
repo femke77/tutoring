@@ -5,11 +5,10 @@ keep my own db? calendly api to my db? yes. eventually
 get the calendly api to put the data regarding the person and the appointment
 in the database. 
 what is the paypal api going to give you? what about receipts and what about credits?
-t&c prior to scheduling 
 
-About
+
+
 Blog
 
 new domain
 
-media queries
