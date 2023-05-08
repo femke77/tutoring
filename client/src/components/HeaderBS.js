@@ -8,7 +8,7 @@ function HeaderBS() {
         <div className="container-fluid">
           <h1>
             {/* <img src={logo} alt="" width="30" height="24" className="d-inline-block align-text-top"/> */}
-            Meg Meyers
+            Meg Meyers -
             <h2 className="pt-3">MERN Stack Tutoring</h2>
           </h1>
 

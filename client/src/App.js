@@ -2,7 +2,7 @@ import HeaderBS from "./components/HeaderBS";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import About from "./components/About";
-import Contact from "./components/Contact";
+import ContactBS from "./components/ContactBS";
 import Terms from "./components/Terms";
 import NoMatch from "./components/NoMatch";
 import Blog from "./components/Blog"
@@ -45,7 +45,7 @@ function App() {
           <HeaderBS />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<ContactBS />} />
             <Route path="/about" element={<About />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/blog" element={<Blog />} />

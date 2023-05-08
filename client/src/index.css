@@ -45,28 +45,29 @@ body {
 
 
 footer {
- height: 45px;
-  padding: 14px;
+ height: 84px;
+ padding-top: 5px;
   font-size: 18px;
   text-align: center;
   position: absolute;
   right: 0;
   left: 0;
   bottom: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
   background-color: #F8F9FA;
   opacity: 0.95;
   border-bottom: 5px solid black;
 
 }
 
+footer a {
+  color: black;
+}
 .hidden-toast {
   display: none;
 }
 
-form {
+/* form {
   margin-top: 62px;
   display: flex;
   flex-direction: column;
@@ -95,11 +96,12 @@ form div textarea {
 #send-email {
   font-size: 20px;
   font-family: 'Courgette';
-}
+} */
 
 .about,
 .terms,
-.blog {
+.blog,
+.contact {
   width: 83%;
   margin: 0 auto;
   font-size: 20pt;
@@ -116,47 +118,4 @@ main {
 .logo {
   height: 80px;
   width: 80px;
-}
-
-@media screen and (max-width: 1592px) {
-
-  header .links {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    margin: 20px 30px 0 0;
-  }
-
-  header a {
-    margin-bottom: 7px;
-  }
-}
-
-@media screen and (max-width: 788px) {
-
-  header .links {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  /* the form needs to be small */
-}
-
-@media screen and (max-width: 442px) {
-
-  header {
-    display: flex;
-    flex-direction: column;
-  }
-
-  header .links {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-  }
-
 }
