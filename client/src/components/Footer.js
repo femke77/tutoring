@@ -2,15 +2,15 @@ import logo from "../assets/logo.png";
 function Footer() {
   return (
     <footer className="d-flex flex-column">
-      <div className="d-flex flex-row justify-content-evenly">
+      <div className="d-flex flex-row justify-content-evenly pb-2">
         <a href="#">
-          <i className="fa-brands fa-linkedin-in fa-spin-pulse fa-lg"></i>
+          <i className="fa-brands fa-linkedin-in fa-fade fa-lg"></i>
         </a>{" "}
         <a href="mailto:luckycatventuresllc@gmail.com">
           <i className="fa-solid fa-envelope fa-fade"></i>
         </a>{" "}
         <a href="https://github.com/femke77" target="_blank">
-          <i className="fa-brands fa-github fa-bounce fa-lg"></i>
+          <i className="fa-brands fa-github fa-fade fa-lg"></i>
         </a>
       </div>
       <p>
