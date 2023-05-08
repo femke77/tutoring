@@ -16,6 +16,8 @@
     "concurrently": "^8.0.1"
   },
   "dependencies": {
-    "@emailjs/browser": "^3.11.0"
+    "@emailjs/browser": "^3.11.0",
+    "bootstrap": "^5.2.3",
+    "react-bootstrap": "^2.7.4"
   }
 }

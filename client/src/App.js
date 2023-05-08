@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import HeaderBS from "./components/HeaderBS";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -6,7 +6,9 @@ import Contact from "./components/Contact";
 import Terms from "./components/Terms";
 import NoMatch from "./components/NoMatch";
 import Blog from "./components/Blog"
+
 import React from "react";
+
 import {
   ApolloClient,
   InMemoryCache,
@@ -40,7 +42,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <main>
-          <Header />
+          <HeaderBS />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />

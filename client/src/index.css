@@ -6,6 +6,7 @@ body {
   height: 100%;
 }
 
+
 #root {
   min-height: 100%;
   position: relative;
@@ -15,47 +16,6 @@ body {
   background-image: url("./assets/bg4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-a {
-  color: black;
-}
-
-a:hover {
-  color: rgb(76, 69, 255);
-}
-
-header {
-  min-height: 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 15px 0 15px;
-  font-size: 58px;
-  border-top: 10px solid black;
-  margin-bottom: 40px;
-}
-
-header h1 {
-  font-size: 54px;
-  margin-bottom: 2px;
-}
-
-header p {
-  font-size: 20px;
-}
-
-header .ident {
-  display: flex;
-  flex-direction: column;
-}
-
-header .links {
-  font-size: 24px;
-}
-
-header a {
-  margin: 0 15px 0 15px;
 }
 
 .no-match-container {
@@ -85,7 +45,7 @@ header a {
 
 
 footer {
-  max-height: 12px;
+ height: 45px;
   padding: 14px;
   font-size: 18px;
   text-align: center;
@@ -96,7 +56,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #C7C7C7;
+  background-color: #F8F9FA;
   opacity: 0.95;
   border-bottom: 5px solid black;
 
@@ -143,7 +103,7 @@ form div textarea {
   width: 83%;
   margin: 0 auto;
   font-size: 20pt;
-  padding-top: 10px;
+  padding-top: 60px;
   /* background-color: #E1E1E1; */
 }
 
@@ -151,10 +111,7 @@ main {
   padding-bottom: 60px;
 }
 
-.subhead {
-  display: flex;
-  align-items: center;
-}
+
 
 .logo {
   height: 80px;
