@@ -1,13 +1,19 @@
-No need for logging in  ??? yet
+No need for logging in  ??? yet!
+
 paypal for payment via Calendly
 Calendly API in datasources
 keep my own db? calendly api to my db? yes. eventually
 get the calendly api to put the data regarding the person and the appointment
 in the database. 
-what is the paypal api going to give you? what about receipts and what about credits?
+
+what is the paypal api going to give you? 
+what about receipts and what about credits?
+to schedule without payment must take a code or something
 
 
-new domain
+new domain for lcv and port over heroko
 
 branch style-update has the bootstrap and react-bootstrap style
 material-ui branch IP
+branch main is shit
+the other branch is also shit

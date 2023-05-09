@@ -17,6 +17,9 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.12.3",
     "bootstrap": "^5.2.3",
     "react-bootstrap": "^2.7.4"
   }

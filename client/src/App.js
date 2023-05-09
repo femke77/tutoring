@@ -5,7 +5,8 @@ import About from "./components/About";
 import ContactBS from "./components/ContactBS";
 import Terms from "./components/Terms";
 import NoMatch from "./components/NoMatch";
-import Blog from "./components/Blog"
+import Blog from "./components/Blog";
+import ResponsiveDrawer from "./components/ResponsiveDrawer";
 
 import React from "react";
 
@@ -42,7 +43,7 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <main>
-          <HeaderBS />
+          <ResponsiveDrawer />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<ContactBS />} />

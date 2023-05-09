@@ -11,7 +11,7 @@ body {
   position: relative;
   font-size: 16pt;
   overflow-x: hidden;
-  font-family: 'Courgette';
+  /* font-family: 'Courgette'; */
   background-image: url("./assets/bg4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -88,6 +88,25 @@ main {
 .logo {
   height: 80px;
   width: 80px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+
+
+}
+
+.links a {
+  color: gray;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: flex;
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 500px) {
