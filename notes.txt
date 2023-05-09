@@ -7,8 +7,7 @@ in the database.
 what is the paypal api going to give you? what about receipts and what about credits?
 
 
-
-Blog
-
 new domain
 
+branch style-update has the bootstrap and react-bootstrap style
+material-ui branch IP

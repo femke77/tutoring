@@ -6,9 +6,9 @@ function HeaderBS() {
     <header>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-          <h1>
+          <h1 className="ps-3">
             {/* <img src={logo} alt="" width="30" height="24" className="d-inline-block align-text-top"/> */}
-            Meg Meyers -
+            Meg Meyers
             <h2 className="pt-3">MERN Stack Tutoring</h2>
           </h1>
 
@@ -24,7 +24,7 @@ function HeaderBS() {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="collapse navbar-collapse  text-end " id="navbarNav">
+          <div className="collapse navbar-collapse pe-3" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <Link to="/" className="nav-link">

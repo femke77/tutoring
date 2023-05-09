@@ -4,7 +4,7 @@ const NoMatch = () => {
   return (
     <div className="no-match-container">
 
-      <div className="no-match">
+      <div className="no-match pt-5">
         <img
           height="500"
           width="500"
