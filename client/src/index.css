@@ -9,9 +9,10 @@ body {
 #root {
   min-height: 100%;
   position: relative;
-  font-size: 16pt;
+  font-size: 12pt;
   overflow-x: hidden;
-  /* font-family: 'Courgette'; */
+  font-family: 'Open Sans';
+
   background-image: url("./assets/bg4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -59,7 +60,7 @@ footer {
   justify-content: space-between;
   background-color: #F8F9FA;
   opacity: 0.95;
-  border-bottom: 5px solid black;
+  /* border-bottom: 5px solid black; */
 }
 
 footer a {
@@ -70,20 +71,8 @@ footer a {
   display: none;
 }
 
-.about,
-.terms,
-.blog,
-.contact {
-  width: 83%;
-  margin: 0 auto;
-  font-size: 20pt;
-  padding-top: 60px;
-  /* background-color: #E1E1E1; */
-}
 
-main {
-  padding-bottom: 90px;
-}
+
 
 .logo {
   height: 80px;
@@ -95,13 +84,26 @@ main {
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
+  font-family: 'Barlow', sans-serif;
 
 
 }
-
+.arrows {
+  display: flex;
+  justify-content: flex-end;
+}
 .links a {
   color: gray;
   text-decoration: none;
+}
+
+.adj {
+  margin-left: 220px;
+  background-color: blue;
+}
+
+.links a:hover {
+  color: black;
 }
 
 .hamburger {
@@ -110,23 +112,9 @@ main {
 }
 
 @media screen and (max-width: 500px) {
-  header {
-    padding-bottom: 24px;
-  }
 
-  main {
 
-    padding-bottom: 120px;
-  }
 
-  .about,
-  .terms,
-  .blog,
-  .contact {
-
-    padding-top: 10px;
-    /* background-color: #E1E1E1; */
-  }
 
   .no-match>img {
     height: 400px;

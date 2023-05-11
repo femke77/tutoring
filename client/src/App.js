@@ -42,8 +42,9 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <main>
+   
           <ResponsiveDrawer />
+          <main>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<ContactBS />} />
@@ -52,7 +53,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="*" element={<NoMatch />} />
           </Routes>
-        </main>
+          </main>
         <Footer />
       </Router>
     </ApolloProvider>
