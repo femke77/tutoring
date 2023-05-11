@@ -61,7 +61,17 @@ function ResponsiveDrawer(props) {
             background: "white",
           }}
           // icons for email and such go here
-        >
+        >  <div className="icons d-flex flex-row justify-content-evenly">
+        <a href="#">
+          <i className="fa-brands fa-linkedin-in fa-lg"></i>
+        </a>{" "}
+        <a href="mailto:luckycatventuresllc@gmail.com">
+          <i className="fa-solid fa-envelope"></i>
+        </a>{" "}
+        <a href="https://github.com/femke77" target="_blank">
+          <i className="fa-brands fa-github fa-lg"></i>
+        </a>
+      </div>
           <Toolbar sx={{ display: "flex", justifyContent: "end" }}>
             <IconButton
               color="inherit"

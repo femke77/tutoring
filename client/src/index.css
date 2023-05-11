@@ -19,10 +19,20 @@ body {
 
 .container {
   padding: 20px;
+  height: 100%;
 }
 
 .hidden-toast {
   display: none;
+}
+
+.icons a {
+  color: black;
+  padding-top: 12px;
+}
+
+a:visited {
+  color: black;
 }
 
 .logo {
