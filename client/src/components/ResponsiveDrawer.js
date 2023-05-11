@@ -30,7 +30,7 @@ function ResponsiveDrawer(props) {
       <Divider />
       <div className="links">
         <hr />
-        <Link to="/">SCHEDULE</Link>
+        <Link to="/schedule">SCHEDULE</Link>
         <hr />
         <Link to="/terms ">TERMS OF SERVICE</Link>
         <hr />

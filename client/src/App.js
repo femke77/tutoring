@@ -45,14 +45,14 @@ function App() {
    
           <ResponsiveDrawer />
           <main>
-          <Routes>
+          {/* <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<ContactBS />} />
             <Route path="/about" element={<About />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="*" element={<NoMatch />} />
-          </Routes>
+          </Routes> */}
           </main>
         <Footer />
       </Router>
