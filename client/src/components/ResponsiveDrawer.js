@@ -30,7 +30,7 @@ function ResponsiveDrawer(props) {
       <Divider />
       <div className="links">
         <hr />
-        <Link to="/schedule">SCHEDULE</Link>
+        <Link to="/">SCHEDULE</Link>
         <hr />
         <Link to="/terms ">TERMS OF SERVICE</Link>
         <hr />
@@ -126,7 +126,7 @@ function ResponsiveDrawer(props) {
           <Toolbar />
         </Box>
       </Box>
-      <Box sx={{ background: "blue", ml: {sm: "220px"} }}>
+      <Box sx={{ background: "grey", ml: {sm: "220px"} }}>
         <Home />
       </Box>
     </>
