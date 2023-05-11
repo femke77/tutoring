@@ -5,12 +5,12 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
-import Home from "./Home";
+import Container from "./Container";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import { Link } from "react-router-dom";
-const drawerWidth = 220;
+
+const drawerWidth = "220px";
 
 function ResponsiveDrawer(props) {
   const { window } = props;
@@ -126,8 +126,8 @@ function ResponsiveDrawer(props) {
           <Toolbar />
         </Box>
       </Box>
-      <Box sx={{ background: "grey", ml: {sm: "220px"} }}>
-        <Home />
+      <Box sx={{ ml: {sm: drawerWidth} }}>
+        <Container />
       </Box>
     </>
   );

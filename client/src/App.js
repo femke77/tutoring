@@ -1,13 +1,4 @@
-import HeaderBS from "./components/HeaderBS";
-import Footer from "./components/Footer";
-import Home from "./components/Home";
-import About from "./components/About";
-import ContactBS from "./components/ContactBS";
-import Terms from "./components/Terms";
-import NoMatch from "./components/NoMatch";
-import Blog from "./components/Blog";
 import ResponsiveDrawer from "./components/ResponsiveDrawer";
-
 import React from "react";
 
 import {
@@ -44,16 +35,7 @@ function App() {
       <Router>
         <main>
           <ResponsiveDrawer />
-          {/* <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/contact" element={<ContactBS />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/terms" element={<Terms />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="*" element={<NoMatch />} />
-          </Routes> */}
         </main>
-        <Footer />
       </Router>
     </ApolloProvider>
   );

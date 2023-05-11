@@ -40,6 +40,7 @@ h1 {
   justify-content: center;
   height: 40%;
   margin-top: -20px;
+
 }
 
 .no-match>p {
@@ -48,24 +49,7 @@ h1 {
 }
 
 
-footer {
-  height: 84px;
-  padding-top: 8px;
-  font-size: 18px;
-  text-align: center;
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  justify-content: space-between;
-  background-color: #F8F9FA;
-  opacity: 0.95;
-  /* border-bottom: 5px solid black; */
-}
 
-footer a {
-  color: black;
-}
 
 .hidden-toast {
   display: none;
@@ -88,10 +72,7 @@ footer a {
 
 
 }
-.arrows {
-  display: flex;
-  justify-content: flex-end;
-}
+
 .links a {
   color: gray;
   text-decoration: none;
@@ -106,14 +87,8 @@ footer a {
   color: black;
 }
 
-.hamburger {
-  display: flex;
-  justify-content: flex-end;
-}
 
 @media screen and (max-width: 500px) {
-
-
 
 
   .no-match>img {
