@@ -1,6 +1,6 @@
 import Calendly from "./Calendly";
 import About from "./About";
-import ContactBS from "./ContactBS";
+import ContactBS from "./Contact";
 import Terms from "./Terms";
 import NoMatch from "./NoMatch";
 import Blog from "./Blog";
@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function Container({}) {
   return (
-    <div className="">
+    <div className="container">
       <Routes>
         <Route path="/" element={<Calendly />} />
         <Route path="/contact" element={<ContactBS />} />

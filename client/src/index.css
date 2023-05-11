@@ -12,14 +12,40 @@ body {
   font-size: 12pt;
   overflow-x: hidden;
   font-family: 'Open Sans';
-
   background-image: url("./assets/bg4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-h1 {
-  font-size: 60px !important;
+.container {
+  padding: 20px;
+}
+
+.hidden-toast {
+  display: none;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: 'Barlow', sans-serif;
+
+}
+
+.links a {
+  color: gray;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: black;
 }
 
 .no-match-container {
@@ -46,45 +72,6 @@ h1 {
 .no-match>p {
   font-size: 36pt;
   margin-top: 2px;
-}
-
-
-
-
-.hidden-toast {
-  display: none;
-}
-
-
-
-
-.logo {
-  height: 80px;
-  width: 80px;
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-family: 'Barlow', sans-serif;
-
-
-}
-
-.links a {
-  color: gray;
-  text-decoration: none;
-}
-
-.adj {
-  margin-left: 220px;
-  background-color: blue;
-}
-
-.links a:hover {
-  color: black;
 }
 
 

@@ -33,9 +33,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <main>
-          <ResponsiveDrawer />
-        </main>
+        <ResponsiveDrawer />
       </Router>
     </ApolloProvider>
   );
