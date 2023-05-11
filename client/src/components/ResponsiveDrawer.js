@@ -60,9 +60,12 @@ function ResponsiveDrawer(props) {
           position="fixed"
           sx={{
             background: "white",
-            width: { xs: "100%", sm: "280px" },
-            height: { xs: "100px", sm: "50px" },
-            display: { xs: "none", sm: "block" },
+            width: { xs: "220px", sm: "280px" },
+            height: { xs: "40px", sm: "50px" },
+            display: { xs: "flex", sm: "flex" },
+            top: {xs: "auto", sm: "0"},
+            bottom: {xs: 0, sm: "auto"},
+          
           }}
         >
           <div className="icons d-flex flex-row justify-content-evenly">
@@ -90,13 +93,12 @@ function ResponsiveDrawer(props) {
         >
           <div className=" header d-flex justify-content-between">
             <div className="pt-2 ps-2">
-              <p className="name">Meg Meyers </p>
-              <p>MERN Tutoring</p>
+              <div className="name pb-1">Meg Meyers </div>
+              <p>Tutoring Services</p>
             </div>
             <div>
               <Toolbar sx={{ display: "flex", justifyContent: "end" }}>
                 <IconButton
-                  color="blue"
                   aria-label="open drawer"
                   edge="start"
                   onClick={handleDrawerToggle}
