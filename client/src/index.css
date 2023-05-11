@@ -46,6 +46,9 @@ a:visited {
   padding-left: 20px;
   padding-right: 20px;
   font-family: 'Barlow', sans-serif;
+  justify-content: space-between;
+  height: 685px;
+  padding-bottom: 20px;
 
 }
 

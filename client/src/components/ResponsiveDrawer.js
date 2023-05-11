@@ -29,20 +29,23 @@ function ResponsiveDrawer(props) {
       </div>
       <Divider />
       <div className="links">
-        <hr />
-        <Link to="/">SCHEDULE</Link>
-        <hr />
-        <Link to="/terms ">TERMS OF SERVICE</Link>
-        <hr />
-        <Link to="/about">ABOUT ME</Link>
-        <hr />
-        <Link to="/contact ">CONTACT</Link>
-        <hr />
-        <Link to="/blog">BLOG</Link>
-        <hr />
+        <div>
+          <hr />
+          <Link to="/">SCHEDULE</Link>
+          <hr />
+          <Link to="/terms ">TERMS OF SERVICE</Link>
+          <hr />
+          <Link to="/about">ABOUT ME</Link>
+          <hr />
+          <Link to="/contact ">CONTACT</Link>
+          <hr />
+          <Link to="/blog">BLOG</Link>
+          <hr />
+        </div>
+        <div>
+          <Link to="privacy">Privacy Policy</Link>
+        </div>
       </div>
-      <Divider />
-      {/* award stuff at the bottom here */}
     </div>
   );
 
@@ -60,18 +63,18 @@ function ResponsiveDrawer(props) {
             height: "50px",
             background: "white",
           }}
-          // icons for email and such go here
-        >  <div className="icons d-flex flex-row justify-content-evenly">
-        <a href="#">
-          <i className="fa-brands fa-linkedin-in fa-lg"></i>
-        </a>{" "}
-        <a href="mailto:luckycatventuresllc@gmail.com">
-          <i className="fa-solid fa-envelope"></i>
-        </a>{" "}
-        <a href="https://github.com/femke77" target="_blank">
-          <i className="fa-brands fa-github fa-lg"></i>
-        </a>
-      </div>
+        >
+          <div className="icons d-flex flex-row justify-content-evenly">
+            <a href="#">
+              <i className="fa-brands fa-linkedin-in fa-lg"></i>
+            </a>{" "}
+            <a href="mailto:luckycatventuresllc@gmail.com">
+              <i className="fa-solid fa-envelope"></i>
+            </a>{" "}
+            <a href="https://github.com/femke77" target="_blank">
+              <i className="fa-brands fa-github fa-lg"></i>
+            </a>
+          </div>
           <Toolbar sx={{ display: "flex", justifyContent: "end" }}>
             <IconButton
               color="inherit"
@@ -136,7 +139,7 @@ function ResponsiveDrawer(props) {
           <Toolbar />
         </Box>
       </Box>
-      <Box sx={{ ml: {sm: drawerWidth} }}>
+      <Box sx={{ ml: { sm: drawerWidth } }}>
         <Container />
       </Box>
     </>
