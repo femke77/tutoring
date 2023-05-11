@@ -59,9 +59,10 @@ function ResponsiveDrawer(props) {
         <AppBar
           position="fixed"
           sx={{
-            width: "280px",
-            height: "50px",
             background: "white",
+            width: { xs: "100%", sm: "280px" },
+            height: { xs: "100px", sm: "50px" },
+            display: { xs: "none", sm: "block" },
           }}
         >
           <div className="icons d-flex flex-row justify-content-evenly">
@@ -75,24 +76,45 @@ function ResponsiveDrawer(props) {
               <i className="fa-brands fa-github fa-lg"></i>
             </a>
           </div>
-          <Toolbar sx={{ display: "flex", justifyContent: "end" }}>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              edge="start"
-              onClick={handleDrawerToggle}
-              sx={{
-                mr: 0,
-                display: { sm: "none" },
-                background: "black",
-                width: "30px",
-                height: "30px",
-                borderRadius: 0,
-              }}
-            >
-              <MenuIcon />
-            </IconButton>
-          </Toolbar>
+   
+        </AppBar>
+
+        <AppBar
+          position="fixed"
+          sx={{
+            background: "white",
+            width: { xs: "100%", sm: "280px" },
+            height: { xs: "100px", sm: "50px" },
+            display: { sm: "none", xs: "block" },
+          }}
+        >
+          <div className=" header d-flex justify-content-between">
+            <div className="pt-2 ps-2">
+              <p className="name">Meg Meyers </p>
+              <p>MERN Tutoring</p>
+            </div>
+            <div>
+              <Toolbar sx={{ display: "flex", justifyContent: "end" }}>
+                <IconButton
+                  color="blue"
+                  aria-label="open drawer"
+                  edge="start"
+                  onClick={handleDrawerToggle}
+                  sx={{
+                    mr: 0,
+                    display: { sm: "none" },
+                    background: "black",
+                    color: "white",
+                    width: "30px",
+                    height: "30px",
+                    borderRadius: 0,
+                  }}
+                >
+                  <MenuIcon />
+                </IconButton>
+              </Toolbar>
+            </div>
+          </div>
         </AppBar>
 
         <Drawer
