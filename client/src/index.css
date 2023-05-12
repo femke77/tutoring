@@ -17,6 +17,9 @@ body {
   background-size: cover;
 }
 
+.content {
+  margin-top: 100px;
+}
 
 .hidden-toast {
   display: none;

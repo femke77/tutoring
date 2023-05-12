@@ -13,26 +13,26 @@ export default function SecondDrawer() {
 
   return (
     <div className="d-flex">
-      {/* don't use conditional rendering, use the Collapse transition */}
-
+ 
         <Collapse in={open} orientation="horizontal" timeout={500}>
           <Box
             sx={{
               background: "black",
               color: "white",
-              width: "600px",
+            //   width is perfect for 768, adjust for smaller
+              width: "548px",  
               height: "100vh",
               p: 3,
             }}
           >
-            <div className="mt-5">
+            <div className="content">
               Content rendered through this drawer. Screenshots of projects in
-              the background.
+              the background. On smaller screens this will be the full page view.
+    
             </div>
           </Box>
         </Collapse>
   
-
       <Box
         sx={{
           background: "black",
