@@ -23,6 +23,7 @@ body {
   padding-bottom: 50px;
 }
 
+
 .hidden-toast {
   display: none;
 }
@@ -94,9 +95,9 @@ a:visited {
 @media screen and (max-width: 599px) {
 
   .header {
-   color: black;
-   font-size: 13pt;
-  
+    color: black;
+    font-size: 13pt;
+
   }
 
   .name {
