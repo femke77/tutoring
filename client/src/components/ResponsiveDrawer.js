@@ -8,6 +8,7 @@ import IconButton from "@mui/material/IconButton";
 import Container from "./Container";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
+import SecondDrawer from "./SecondDrawer";
 import { Link } from "react-router-dom";
 
 const drawerWidth = "220px";
@@ -154,15 +155,17 @@ function ResponsiveDrawer(props) {
           component="main"
           sx={{
             flexGrow: 1,
-            p: 3,
+            // p: 3,
             width: { sm: `calc(100% - ${drawerWidth}px)` },
           }}
         >
-          <Toolbar />
+          {/* <Toolbar /> */}
         </Box>
       </Box>
       <Box sx={{ ml: { sm: drawerWidth } }}>
-        <Container />
+        <Container/>
+     
+     
       </Box>
     </>
   );
