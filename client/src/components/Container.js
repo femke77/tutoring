@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function Container({}) {
   return (
-    <div className="containr">
+    <div className="contain">
       <SecondDrawer/>
       {/* <Routes>
         <Route path="/" element={<Calendly />} />

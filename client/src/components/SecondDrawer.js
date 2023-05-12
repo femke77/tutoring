@@ -14,8 +14,8 @@ export default function SecondDrawer() {
   return (
     <div className="d-flex">
       {/* don't use conditional rendering, use the Collapse transition */}
-      {open && (
-        <Collapse in={open}>
+
+        <Collapse in={open} orientation="horizontal" timeout={500}>
           <Box
             sx={{
               background: "black",
@@ -31,7 +31,7 @@ export default function SecondDrawer() {
             </div>
           </Box>
         </Collapse>
-      )}
+  
 
       <Box
         sx={{
