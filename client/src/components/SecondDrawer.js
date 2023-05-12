@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Box, Button } from "@mui/material";
-import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import Collapse from "@mui/material/Collapse";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import CloseIcon from "@mui/icons-material/Close";
 
 export default function SecondDrawer() {
   const [open, setOpen] = useState(true);
@@ -19,13 +20,14 @@ export default function SecondDrawer() {
             sx={{
               background: "black",
               color: "white",
-              width: "548px",
+              width: "600px",
               height: "100vh",
               p: 3,
             }}
           >
             <div className="mt-5">
-              Second drawer here, line me up with nav!{" "}
+              Content rendered through this drawer. Screenshots of projects in
+              the background.
             </div>
           </Box>
         </Collapse>
@@ -45,11 +47,15 @@ export default function SecondDrawer() {
         }}
       >
         <Button variant="text" onClick={handleDrawer}>
-          <ChevronLeftIcon
-            sx={{
-              color: "white",
-            }}
-          />
+          {!open ? (
+            <ChevronRightIcon
+              sx={{
+                color: "white",
+              }}
+            />
+          ) : (
+            <CloseIcon sx={{ color: "white" }} />
+          )}
         </Button>
       </Box>
     </div>

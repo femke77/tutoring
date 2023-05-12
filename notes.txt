@@ -1,7 +1,8 @@
 No need for logging in  ??? yet!
 
-paypal for payment via Calendly
-Calendly API in datasources
+Paypal for payment via Calendly   - account created just link via Calendly
+
+Calendly API in datasources for later when you save data serverside
 keep my own db? calendly api to my db? yes. eventually
 get the calendly api to put the data regarding the person and the appointment
 in the database. 
@@ -11,9 +12,11 @@ what about receipts and what about credits?
 to schedule without payment must take a code or something
 
 
-new domain for lcv and port over heroko
+new domain for lcv and port over heroku
 
+Branch descriptions:
+second-drawer branch is now me updating material-ui branch to include the second drawer. 
 branch style-update has the bootstrap and react-bootstrap style
-material-ui branch IP
+material-ui branch  - works great without the second drawer and not all finishing touches like fonts etc are done. 
 branch main is shit
 the other branch is also shit
