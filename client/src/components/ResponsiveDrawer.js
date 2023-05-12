@@ -63,9 +63,8 @@ function ResponsiveDrawer(props) {
             width: { xs: "220px", sm: "280px" },
             height: { xs: "40px", sm: "50px" },
             display: { xs: "flex", sm: "flex" },
-            top: {xs: "auto", sm: "0"},
-            bottom: {xs: 0, sm: "auto"},
-          
+            top: { xs: "auto", sm: "0" },
+            bottom: { xs: 0, sm: "auto" },
           }}
         >
           <div className="icons d-flex flex-row justify-content-evenly">
@@ -79,7 +78,6 @@ function ResponsiveDrawer(props) {
               <i className="fa-brands fa-github fa-lg"></i>
             </a>
           </div>
-   
         </AppBar>
 
         <AppBar
