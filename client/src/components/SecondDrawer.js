@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Button } from "@mui/material";
+import { Box, Button, hexToRgb } from "@mui/material";
 import Collapse from "@mui/material/Collapse";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import CloseIcon from "@mui/icons-material/Close";
@@ -18,6 +18,7 @@ export default function SecondDrawer() {
           <Box
             sx={{
               background: "black",
+              opacity: "0.8",
               color: "white",
             //   width is perfect for 768, adjust for smaller
               width: "548px",  
