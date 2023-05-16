@@ -34,7 +34,10 @@ a:visited {
   color: black;
 }
 
-
+.contain {
+  background-image: url("./assets/musicxpansion.png");
+  background-size: contain;
+}
 
 .logo {
   height: 80px;

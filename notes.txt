@@ -14,6 +14,12 @@ to schedule without payment must take a code or something
 
 new domain for lcv and port over heroku
 
+
+nav active needs to be done
+privacy policy not formatted nicely
+award
+
+
 Branch descriptions:
 second-drawer branch is now me updating material-ui branch to include the second drawer. 
 branch style-update has the bootstrap and react-bootstrap style
