@@ -36,7 +36,9 @@ a:visited {
 
 .contain {
   background-image: url("./assets/musicxpansion.png");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
 }
 
 .logo {

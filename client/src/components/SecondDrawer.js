@@ -24,8 +24,8 @@ export default function SecondDrawer() {
       <Collapse in={open} orientation="horizontal" timeout={500}>
         <Box
           sx={{
-            background: "black",
-            opacity: "0.8",
+            background: "#2E2726",
+            opacity: "0.9",
             color: "white",
             width: "650px",
             height: "100%",
@@ -49,7 +49,7 @@ export default function SecondDrawer() {
 
       <Box
         sx={{
-          background: "black",
+          background: "#2E2726",
           color: "white",
           width: "30px",
           height: "20px",
