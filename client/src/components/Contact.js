@@ -77,7 +77,6 @@ export default function ContactBS() {
           type="text"
           value={user_name}
           name="user_name"
-          placeholder="name"
           onChange={handleChange}
           onBlur={handleValidation}
         />
@@ -89,7 +88,6 @@ export default function ContactBS() {
           type="email"
           value={user_email}
           name="user_email"
-          placeholder="email"
           onChange={handleChange}
           onBlur={handleValidation}
         />
@@ -100,7 +98,6 @@ export default function ContactBS() {
         <Form.Control
           name="subject"
           value={subject}
-          placeholder="subject"
           onChange={handleChange}
           onBlur={handleValidation}
         />
@@ -113,7 +110,6 @@ export default function ContactBS() {
           rows={3}
           name="message"
           value={message}
-          placeholder="message"
           onChange={handleChange}
           onBlur={handleValidation}
         />

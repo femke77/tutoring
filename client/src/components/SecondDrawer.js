@@ -24,8 +24,8 @@ export default function SecondDrawer() {
       <Collapse in={open} orientation="horizontal" timeout={500}>
         <Box
           sx={{
-            background: "#2E2726",
-            opacity: "0.9",
+            background: "#131313",
+            opacity: "0.95",
             color: "white",
             width: "650px",
             height: "100%",
@@ -49,7 +49,7 @@ export default function SecondDrawer() {
 
       <Box
         sx={{
-          background: "#2E2726",
+          background: "#131313",
           color: "white",
           width: "30px",
           height: "20px",
@@ -75,3 +75,6 @@ export default function SecondDrawer() {
     </div>
   );
 }
+
+// each second drawer can be different how?? and the blog page can be like the book page? or
+// something lke that.
