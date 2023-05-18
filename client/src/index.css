@@ -47,19 +47,30 @@ a:visited {
   color: black;
 }
 
-/* background */
+/* background - will change when slide is added*/
 .contain {
-  background-image: url("./assets/musicxpansion.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+
 }
 
 /* routes are in this */
 .content {
-  margin-top: 100px;
-  color: #CCCCCC
+  color: #CCCCCC;
+  background-image: url("./assets/musicxpansion.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  min-height: 100%;
 }
+
+.content a {
+  color: white;
+}
+.content a:hover {
+  text-decoration: none;
+  color: white;
+}
+
 
 .logo {
   height: 80px;
@@ -87,7 +98,32 @@ a:visited {
   color: black;
 }
 
+.award {
+  text-align: center;
+}
 
+.about, .terms, .contact{
+  margin-top: 100px;
+}
+
+.calendar {
+  padding-top: 125px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.blog {
+  padding-top: 125px;
+}
+.blog-block {
+  height: 600px;
+  width: 700px;
+  background-color: black;
+  margin: 0 auto;
+  padding-top: 15px;
+  padding-left: 15px;
+
+}
 .no-match-container {
   display: flex;
   flex-direction: column;
@@ -114,13 +150,6 @@ a:visited {
   margin-top: 2px;
 }
 
-.content a {
-  color: white;
-}
-.content a:hover {
-  text-decoration: none;
-  color: white;
-}
 
 @media screen and (max-width: 599px) {
 
