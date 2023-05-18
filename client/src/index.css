@@ -17,6 +17,10 @@ body {
   background-size: cover;
 }
 
+.privacy-pol {
+  background-color: #2C2729;
+  padding: 60px;
+}
 
 .pri-pol-link {
   text-decoration: underline;

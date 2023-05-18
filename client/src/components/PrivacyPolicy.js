@@ -1,7 +1,7 @@
 export default function Privacy() {
     
     return (
-        <p>
+        <p className="privacy-pol">
         PRIVACY POLICY
         
         Last updated May 11, 2023
