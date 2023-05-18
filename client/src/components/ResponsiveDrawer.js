@@ -28,7 +28,6 @@ function ResponsiveDrawer(props) {
         <h2>Meg Meyers</h2>
         <h3>Tutoring Services</h3>
       </div>
-      <Divider />
       <div className="links">
         <div>
           <hr />
@@ -43,7 +42,15 @@ function ResponsiveDrawer(props) {
           <Link to="/blog">BLOG</Link>
           <hr />
         </div>
-        <div>
+        <div className="award">
+          <div
+            data-iframe-width="150"
+            data-iframe-height="270"
+            data-share-badge-id="10d343b0-6ceb-4b18-960c-a46c0b76c228"
+            data-share-badge-host="https://www.credly.com"
+          ></div>
+        </div>
+        <div className="pri-pol-link">
           <Link to="privacy">Privacy Policy</Link>
         </div>
       </div>
@@ -158,14 +165,10 @@ function ResponsiveDrawer(props) {
             // p: 3,
             width: { sm: `calc(100% - ${drawerWidth}px)` },
           }}
-        >
-          {/* <Toolbar /> */}
-        </Box>
+        ></Box>
       </Box>
       <Box sx={{ ml: { sm: drawerWidth } }}>
-        <Container/>
-     
-     
+        <Container />
       </Box>
     </>
   );

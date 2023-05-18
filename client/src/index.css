@@ -19,10 +19,15 @@ body {
 
 .content {
   margin-top: 100px;
+  color: #CCCCCC
 }
 
-.cal {
-  background-color: rgba(0, 0, 0, 1);
+
+.pri-pol-link {
+  text-decoration: underline;
+  text-decoration-color: rgb(175, 174, 174);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
 }
 
 .hidden-toast {
@@ -42,8 +47,9 @@ a:visited {
   background-image: url("./assets/musicxpansion.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
+  /* background-position-x: center;
+  background-position-y: center; */
+  background-position: center;
 }
 
 .logo {
