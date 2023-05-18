@@ -11,10 +11,10 @@ import Toolbar from "@mui/material/Toolbar";
 import SecondDrawer from "./SecondDrawer";
 import { Link } from "react-router-dom";
 
-const drawerWidth = "220px";
+const drawerWidth = "240px";
 
-function ResponsiveDrawer(props) {
-  const { window } = props;
+function ResponsiveDrawer() {
+
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
@@ -44,6 +44,7 @@ function ResponsiveDrawer(props) {
         </div>
         <div className="award">
           <div
+            title='2022 instructional excellence award from 2u.'
             data-iframe-width="150"
             data-iframe-height="270"
             data-share-badge-id="10d343b0-6ceb-4b18-960c-a46c0b76c228"
@@ -57,8 +58,7 @@ function ResponsiveDrawer(props) {
     </div>
   );
 
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
+  
 
   return (
     <>
@@ -126,7 +126,7 @@ function ResponsiveDrawer(props) {
         </AppBar>
 
         <Drawer
-          container={container}
+      
           variant="temporary"
           open={mobileOpen}
           onClose={handleDrawerToggle}

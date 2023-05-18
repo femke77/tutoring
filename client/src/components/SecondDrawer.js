@@ -10,6 +10,7 @@ import Terms from "./Terms";
 import NoMatch from "./NoMatch";
 import Blog from "./Blog";
 import Privacy from "./PrivacyPolicy";
+import SecondDrawerButton from "./SecondDrawerButton";
 import { BrowserRouter as _, Routes, Route } from "react-router-dom";
 
 export default function SecondDrawer() {
@@ -60,17 +61,7 @@ export default function SecondDrawer() {
           alignItems: "center",
         }}
       >
-        <Button variant="text" onClick={handleDrawer}>
-          {!open ? (
-            <ChevronRightIcon
-              sx={{
-                color: "white",
-              }}
-            />
-          ) : (
-            <CloseIcon sx={{ color: "white" }} />
-          )}
-        </Button>
+        <SecondDrawerButton handleDrawer={handleDrawer} open={open} color="white"></SecondDrawerButton>
       </Box>
     </div>
   );
