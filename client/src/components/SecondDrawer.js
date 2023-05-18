@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { Box, Button } from "@mui/material";
+import { Box } from "@mui/material";
 import Collapse from "@mui/material/Collapse";
-import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import CloseIcon from "@mui/icons-material/Close";
 import Calendly from "./Calendly";
 import About from "./About";
 import ContactBS from "./Contact";
@@ -47,7 +45,7 @@ export default function SecondDrawer() {
           </div>
         </Box>
       </Collapse>
-
+{/* 
       <Box
         sx={{
           background: "#2C2729",
@@ -60,15 +58,11 @@ export default function SecondDrawer() {
           justifyContent: "center",
           alignItems: "center",
         }}
-      >
+      > */}
         <SecondDrawerButton handleDrawer={handleDrawer} open={open} color="white"></SecondDrawerButton>
-      </Box>
+      {/* </Box> */}
     </div>
   );
 }
 
-// each second drawer can be different how?? and the blog page can be like the book page? or
-// something lke that.
-// so each element will have it's own second drawer or no drawer
-// so there will be no second drawer element, just a collapse and box on each element that need one,
-// render via container then
+
