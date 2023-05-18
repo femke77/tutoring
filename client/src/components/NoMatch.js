@@ -12,9 +12,10 @@ const NoMatch = () => {
           alt="cartoon cat with mouth wide open"
         />
         <p>Oops, we couldn't find that page!</p>
+        <a href="http://vecteezy.com">image by vecteezy.com</a>
+
       </div>
 
-      <a href="http://vecteezy.com">image by vecteezy.com</a>
     </div>
   );
 };

@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Box } from "@mui/material";
 import Collapse from "@mui/material/Collapse";
 import SecondDrawerButton from "./SecondDrawerButton";
-import { BrowserRouter as _, Routes, Route } from "react-router-dom";
 
+// Template only - refactor with pages cuz too much code repeating
 export default function SecondDrawer(props) {
   const [open, setOpen] = useState(true);
 
@@ -17,23 +17,23 @@ export default function SecondDrawer(props) {
         <Box
           sx={{
             background: "#2C2729",
-            opacity: "0.95",
+            opacity: props.opacity,
             color: "white",
-            width: "650px",
+            width: props.width,
             height: "100%",
             minHeight: "100vh",
             p: 3,
           }}
-        >
-
-        
-        </Box>
+        ></Box>
       </Collapse>
+      
+      <props.Componenet />
 
-        <SecondDrawerButton handleDrawer={handleDrawer} open={open} color="white"></SecondDrawerButton>
-  
+      <SecondDrawerButton
+        handleDrawer={handleDrawer}
+        open={open}
+        color="white"
+      ></SecondDrawerButton>
     </div>
   );
 }
-
-

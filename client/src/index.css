@@ -18,7 +18,6 @@ body {
 }
 
 
-
 .pri-pol-link {
   text-decoration: underline;
   text-decoration-color: rgb(175, 174, 174);
@@ -34,7 +33,7 @@ body {
   color: black;
   padding-top: 12px;
   height: 50px;
-  width: 40px;
+  width: 50px;
   text-align: center;
 }
 
@@ -45,11 +44,6 @@ body {
 
 a:visited {
   color: black;
-}
-
-/* background - will change when slide is added*/
-.contain {
-
 }
 
 /* routes are in this */
@@ -84,9 +78,8 @@ a:visited {
   padding-right: 20px;
   font-family: 'Barlow', sans-serif;
   justify-content: space-between;
-  height: 685px;
-  padding-bottom: 20px;
-
+  height: 700px;
+  
 }
 
 .links a {
@@ -113,12 +106,13 @@ a:visited {
 }
 
 .blog {
-  padding-top: 125px;
+  padding-top: 150px;
 }
+
 .blog-block {
-  height: 600px;
-  width: 700px;
-  background-color: black;
+  height: 700px;
+  width: 800px;
+  background-color:#2C2729;
   margin: 0 auto;
   padding-top: 15px;
   padding-left: 15px;
@@ -129,10 +123,16 @@ a:visited {
   flex-direction: column;
   text-align: end;
   padding-right: 15px;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  padding-top: 350px;
+  color: black;
+  border: 15px solid #2c2729;
+ 
 }
 
 .no-match-container a {
-  color: blue;
+  color: black;
 }
 
 .no-match {

@@ -25,7 +25,8 @@ function About() {
           }}
         >
           <div className="about">
-            <p>
+            <h2>Welcome!</h2>
+            <p className="mt-4">
               I've been coding in various languages and paradigms for a little
               over 10 years. My BS degree is in Computer Science, and I
               currently work for edX as a tutor, a TA, and a occasional
@@ -36,15 +37,13 @@ function About() {
               place in the 2018 AI Jam which sprung us into the world of
               creating our own startup! I am the winner of the 2022 Instructor
               Excellence award for the tutor with the most students and best
-              metrics.{" "}
+              metrics.
             </p>
-
             <p>
               I have a strong passion for coding. You can say it verges on an
               obsession at times. Every bug is a puzzle that I just can't wait
               to squash!
             </p>
-
             <p>
               Helping students learn to code is something I find not only fun
               but rewarding. I am excited to help you learn and grow your MERN
