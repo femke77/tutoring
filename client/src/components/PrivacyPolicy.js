@@ -1,6 +1,7 @@
 export default function Privacy() {
   return (
     <div className="privacy-pol">
+      <h2 className="mb-5">Privacy Policy</h2>
       PRIVACY POLICY Last updated May 11, 2023 This privacy notice for Lucky Cat
       Ventures, LLC ("Company," "we," "us," or "our"), describes how and why we
       might collect, store, use, and/or share ("process") your information when

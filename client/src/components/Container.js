@@ -17,7 +17,7 @@ function Container({}) {
         <Route path="/about" element={<SecondDrawer Componenent={About} width="600px" opacity=".9" />} />
         <Route path="/schedule" element={<Calendly />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/privacy" element={ <SecondDrawer Componenent={Privacy} width="650px" opacity=".9" />} />
+        <Route path="/privacy" element={ <SecondDrawer Componenent={Privacy} width="750px" opacity=".9" />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
     </div>
