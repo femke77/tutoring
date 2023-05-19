@@ -1,33 +1,10 @@
 import React, { useState } from "react";
-import { Box } from "@mui/material";
-import Collapse from "@mui/material/Collapse";
-import SecondDrawerButton from "./SecondDrawerButton";
+
 
 function About() {
-  const [open, setOpen] = useState(true);
 
-  const handleDrawer = () => {
-    setOpen(!open);
-  };
-
-  console.log("width", window.innerWidth)
-  //width of box = window.width - drawerwidth
   return (
-    <div className="d-flex">
-      <Collapse in={open} orientation="horizontal" timeout={500}>
-        <Box
-          sx={{
-            background: "#2C2729",
-            opacity: "0.9",
-            color: "white",
-            width: "600px",
-          //  width: { md: window.innerWidth - 240 },
-            height: "100%",
-            minHeight: "100vh",
-            p: 3,
-  
-          }}
-        >
+
           <div className="about">
             <h2>About Me</h2>
             <p className="mt-5">
@@ -54,15 +31,7 @@ function About() {
               stack skills.
             </p>
           </div>
-        </Box>
-      </Collapse>
-
-      <SecondDrawerButton
-        handleDrawer={handleDrawer}
-        open={open}
-        color="white"
-      ></SecondDrawerButton>
-    </div>
+ 
   );
 }
 

@@ -2,18 +2,11 @@ import React, { useRef, useState } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import emailjs from "@emailjs/browser";
-import { Box } from "@mui/material";
-import Collapse from "@mui/material/Collapse";
 
-import SecondDrawerButton from "./SecondDrawerButton";
 import { validateEmail } from "../utils/helpers";
 
 export default function ContactBS() {
-  const [open, setOpen] = useState(true);
 
-  const handleDrawer = () => {
-    setOpen(!open);
-  };
   const [formState, setFormState] = useState({
     user_name: "",
     user_email: "",
@@ -78,17 +71,7 @@ export default function ContactBS() {
   };
 
   return (
-    <div className="d-flex">
-      <Collapse in={open} orientation="horizontal" timeout={500}>
-        <Box
-          sx={{
-            background: "#2C2729",
-            width: "650px",
-            height: "100%",
-            minHeight: "100vh",
-            p: 3,
-          }}
-        >
+
           <Form className="contact" ref={form} onSubmit={sendEmail}>
             <h2>Contact Me</h2>
             <p className="mt-5">
@@ -151,14 +134,6 @@ export default function ContactBS() {
             <div className={hiddenState ? "hidden-toast" : ""}>Email Sent.</div>
             {errorMessage && <div>{errorMessage}</div>}
           </Form>
-        </Box>
-      </Collapse>
-
-      <SecondDrawerButton
-        handleDrawer={handleDrawer}
-        open={open}
-        color="white"
-      ></SecondDrawerButton>
-    </div>
+      
   );
 }
