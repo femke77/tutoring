@@ -5,7 +5,8 @@ import ContactBS from "./Contact";
 import Terms from "./Terms";
 import NoMatch from "./NoMatch";
 import Blog from "./Blog";
-import PrivacyPage from "./PrivacyPage";
+import Privacy from "./PrivacyPolicy";
+import SecondDrawer from "./SecondDrawer";
 
 function Container({}) {
   return (
@@ -16,7 +17,7 @@ function Container({}) {
         <Route path="/about" element={<About />} />
         <Route path="/schedule" element={<Calendly />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/privacy" element={<PrivacyPage />} />
+        <Route path="/privacy" element={ <SecondDrawer Componenent={Privacy} width="650px" opacity=".9" />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
     </div>
