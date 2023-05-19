@@ -15,6 +15,7 @@ export default function SecondDrawerButton(props) {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        display: {xs: "none", sm: "none", lg: "flex"}
       }}
     >
       <Button variant="text" onClick={props.handleDrawer}>

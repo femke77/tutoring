@@ -10,6 +10,8 @@ function About() {
     setOpen(!open);
   };
 
+  console.log("width", window.innerWidth)
+  //width of box = window.width - drawerwidth
   return (
     <div className="d-flex">
       <Collapse in={open} orientation="horizontal" timeout={500}>
@@ -19,14 +21,16 @@ function About() {
             opacity: "0.9",
             color: "white",
             width: "600px",
+          //  width: { md: window.innerWidth - 240 },
             height: "100%",
             minHeight: "100vh",
             p: 3,
+  
           }}
         >
           <div className="about">
-       
-            <p >
+            <h2>About Me</h2>
+            <p className="mt-5">
               I've been coding in various languages and paradigms for a little
               over 10 years. My BS degree is in Computer Science, and I
               currently work for edX as a tutor, a TA, and a occasional

@@ -18,6 +18,8 @@ function Terms() {
             opacity: "0.9",
             color: "white",
             width: "700px",
+    
+            // width: { sm: window.innerWidth - 240 },
             height: "100%",
             minHeight: "100vh",
             p: 3,

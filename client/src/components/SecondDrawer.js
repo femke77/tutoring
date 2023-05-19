@@ -21,6 +21,8 @@ export default function SecondDrawer(props) {
             opacity: props.opacity,
             color: "white",
             width: props.width,
+            maxWidth: props.width,
+            width: {md: window.innerWidth - 240 },
             height: "100%",
             minHeight: "100vh",
             p: 3,
