@@ -24,7 +24,8 @@ function Terms() {
           }}
         >
           <div className="terms">
-            <p>
+          <h2>Welcome!</h2>
+            <p className="mt-5">
               This is a tutoring service only for students who have graduated
               from an edX Full Stack Coding boot camp. By using this service you
               certify that you are done with the program and are no longer

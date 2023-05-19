@@ -5,18 +5,18 @@ import ContactBS from "./Contact";
 import Terms from "./Terms";
 import NoMatch from "./NoMatch";
 import Blog from "./Blog";
-import Privacy from "./PrivacyPolicy";
+import PrivacyPage from "./PrivacyPage";
 
 function Container({}) {
   return (
     <div className="content">
       <Routes>
-        <Route path="/" element={<Calendly />} />
+        <Route path="/" element={<Terms />} />
         <Route path="/contact" element={<ContactBS />} />
         <Route path="/about" element={<About />} />
-        <Route path="/terms" element={<Terms />} />
+        <Route path="/schedule" element={<Calendly />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
     </div>

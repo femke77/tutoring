@@ -30,9 +30,9 @@ function ResponsiveDrawer() {
       <div className="links">
         <div>
           <hr />
-          <Link to="/">SCHEDULE</Link>
+          <Link to="/schedule">SCHEDULE</Link>
           <hr />
-          <Link to="/terms ">TERMS OF SERVICE</Link>
+          <Link to="/">TERMS OF SERVICE</Link>
           <hr />
           <Link to="/about">ABOUT ME</Link>
           <hr />

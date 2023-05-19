@@ -5,6 +5,7 @@ import SecondDrawerButton from "./SecondDrawerButton";
 
 // Template only - refactor with pages cuz too much code repeating
 export default function SecondDrawer(props) {
+  const { Componenent } = props;
   const [open, setOpen] = useState(true);
 
   const handleDrawer = () => {
@@ -24,10 +25,10 @@ export default function SecondDrawer(props) {
             minHeight: "100vh",
             p: 3,
           }}
-        ></Box>
+        >
+          <Componenent />
+        </Box>
       </Collapse>
-      
-      <props.Componenet />
 
       <SecondDrawerButton
         handleDrawer={handleDrawer}

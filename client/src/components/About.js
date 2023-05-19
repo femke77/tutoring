@@ -25,8 +25,8 @@ function About() {
           }}
         >
           <div className="about">
-            <h2>Welcome!</h2>
-            <p className="mt-4">
+       
+            <p >
               I've been coding in various languages and paradigms for a little
               over 10 years. My BS degree is in Computer Science, and I
               currently work for edX as a tutor, a TA, and a occasional
