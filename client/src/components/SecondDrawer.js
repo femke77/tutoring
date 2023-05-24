@@ -19,7 +19,7 @@ export default function SecondDrawer(props) {
           sx={{
             background: "#2C2729",
             opacity: props.opacity,
-            color: "white",
+            color: "#CCCCCC",
             maxWidth: props.width,
             width: { md: window.innerWidth - 240, lg: props.width },
             height: "100%",

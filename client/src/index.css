@@ -17,6 +17,10 @@ body {
   background-size: cover;
 }
 
+h2 {
+  color: white;
+}
+
 .privacy-pol {
   padding-top: 100px;
   padding-bottom: 60px;
@@ -86,7 +90,7 @@ a:visited {
   font-family: 'Barlow', sans-serif;
   justify-content: space-between;
   height: 700px;
-  
+
 }
 
 .links a {
@@ -102,9 +106,12 @@ a:visited {
   text-align: center;
 }
 
-.about, .terms, .contact{
+.about,
+.terms,
+.contact {
   margin-top: 160px;
   padding-bottom: 60px;
+  color: #CCCCCC;
 }
 
 .calendar {
@@ -118,7 +125,7 @@ a:visited {
 .blog-block {
   height: 700px;
   width: 800px;
-  background-color:#2C2729;
+  background-color: #2C2729;
   margin: 0 auto;
   padding-top: 15px;
   padding-left: 15px;
@@ -135,7 +142,7 @@ a:visited {
   padding-top: 350px;
   color: black;
   border: 15px solid #2c2729;
- 
+
 }
 
 .no-match-container a {
