@@ -12,10 +12,9 @@ export default function SecondDrawerButton(props) {
         height: "20px",
         ml: "0px",
         p: 3,
-        display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        display: {xs: "none", sm: "none", lg: "flex"}
+        display: {xs: "none", sm: "none", md: "flex"}
       }}
     >
       <Button variant="text" onClick={props.handleDrawer}>

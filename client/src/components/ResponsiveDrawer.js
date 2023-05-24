@@ -9,10 +9,10 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import { Link } from "react-router-dom";
 
-const drawerWidth = "240px";
-
 function ResponsiveDrawer() {
-  
+
+  const drawerWidth = "240px";
+
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "//cdn.credly.com/assets/utilities/embed.js";
@@ -77,13 +77,13 @@ function ResponsiveDrawer() {
           }}
         >
           <div className="icons d-flex flex-row justify-content-evenly">
-            <a href="#">
+            <a href="https://www.linkedin.com/in/meg-meyers-11891757/">
               <i className="fa-brands fa-linkedin-in fa-lg"></i>
             </a>{" "}
             <a href="mailto:luckycatventuresllc@gmail.com">
               <i className="fa-solid fa-envelope"></i>
             </a>{" "}
-            <a href="https://github.com/femke77" target="_blank">
+            <a href="https://github.com/femke77">
               <i className="fa-brands fa-github fa-lg"></i>
             </a>
           </div>

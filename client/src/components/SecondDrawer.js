@@ -20,14 +20,13 @@ export default function SecondDrawer(props) {
             background: "#2C2729",
             opacity: props.opacity,
             color: "white",
-            width: props.width,
             maxWidth: props.width,
-            width: {md: window.innerWidth - 240 },
+            width: { md: window.innerWidth - 240, lg: props.width },
             height: "100%",
             minHeight: "100vh",
             maxHeight: "100vh",
             p: 3,
-            overflowY: "auto"
+            overflowY: "auto",
           }}
         >
           <Componenent />
