@@ -7,7 +7,7 @@ export default function SecondDrawerButton(props) {
     <Box
       sx={{
         background: "#2C2729",
-        color: "white",
+        color: "#999999",
         width: "30px",
         height: "20px",
         ml: "0px",

@@ -37,7 +37,7 @@ export default function SecondDrawer(props) {
       <SecondDrawerButton
         handleDrawer={handleDrawer}
         open={open}
-        color="white"
+        color="#999999"
       ></SecondDrawerButton>
     </div>
   );

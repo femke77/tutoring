@@ -10,7 +10,12 @@ function Calendly() {
 
   return (
     <div className="calendar">
-      <InlineWidget url="https://calendly.com/megmeyers/tutorial-session" />;
+      <InlineWidget
+        // styles={{
+        //   height: "700px", width: "1500px"
+        // }}
+        url="https://calendly.com/megmeyers/tutorial-session"
+      />
     </div>
   );
 }
