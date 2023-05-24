@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -7,12 +7,17 @@ import IconButton from "@mui/material/IconButton";
 import Container from "./Container";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-import SecondDrawer from "./SecondDrawer";
 import { Link } from "react-router-dom";
 
 const drawerWidth = "240px";
 
 function ResponsiveDrawer() {
+  
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "//cdn.credly.com/assets/utilities/embed.js";
+    document.body.appendChild(script);
+  });
 
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -43,7 +48,6 @@ function ResponsiveDrawer() {
         </div>
         <div className="award">
           <div
-            title='2022 instructional excellence award from 2u.'
             data-iframe-width="150"
             data-iframe-height="270"
             data-share-badge-id="10d343b0-6ceb-4b18-960c-a46c0b76c228"
@@ -56,8 +60,6 @@ function ResponsiveDrawer() {
       </div>
     </div>
   );
-
-  
 
   return (
     <>
@@ -125,7 +127,6 @@ function ResponsiveDrawer() {
         </AppBar>
 
         <Drawer
-      
           variant="temporary"
           open={mobileOpen}
           onClose={handleDrawerToggle}

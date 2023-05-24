@@ -18,7 +18,7 @@ body {
 }
 
 .privacy-pol {
-  padding-top: 180px;
+  padding-top: 100px;
   padding-bottom: 60px;
 }
 
@@ -125,11 +125,6 @@ a:visited {
 
 }
 
-.respond {
-  display: flex;
-  flex-wrap: wrap;
-
-}
 .no-match-container {
   display: flex;
   flex-direction: column;
