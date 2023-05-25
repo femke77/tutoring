@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 
 function ResponsiveDrawer() {
 
-  const drawerWidth = "240px";
+  const drawerWidth = "260px";
 
   useEffect(() => {
     const script = document.createElement("script");
@@ -26,10 +26,10 @@ function ResponsiveDrawer() {
   };
 
   const drawer = (
-    <div>
+    <div className="">
       <Toolbar />
-      <div className="p-3">
-        <h2>Meg Meyers</h2>
+      <div className="p-3 pt-0">
+        <h1>Meg Meyers</h1>
         <h3>Tutoring Services</h3>
       </div>
       <div className="links">
@@ -54,7 +54,7 @@ function ResponsiveDrawer() {
             data-share-badge-host="https://www.credly.com"
           ></div>
         </div>
-        <div className="pri-pol-link">
+        <div className="pri-pol-link pb-3">
           <Link to="privacy">Privacy Policy</Link>
         </div>
       </div>

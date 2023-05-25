@@ -67,6 +67,7 @@ a:visited {
 
 }
 
+
 .content a {
   color: white;
 }
@@ -75,7 +76,6 @@ a:visited {
   text-decoration: none;
   color: white;
 }
-
 
 .logo {
   height: 80px;
