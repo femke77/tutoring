@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
+
 
 function About() {
+
   return (
-    <div className="about">
+    <div  className="about">
       <h2>About Me</h2>
       <p className="mt-5">
         I've been coding in various languages and paradigms for a little over 10
