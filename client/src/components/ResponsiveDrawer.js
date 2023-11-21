@@ -28,7 +28,7 @@ function ResponsiveDrawer() {
   const drawer = (
     <div className="">
       <Toolbar />
-      <div className="p-3 pt-0">
+      <div className="p-3 pt-0 menu-top">
         <h1>Meg Meyers</h1>
         <h3>Tutoring Services</h3>
       </div>
@@ -99,8 +99,8 @@ function ResponsiveDrawer() {
           }}
         >
           <div className=" header d-flex justify-content-between">
-            <div className="pt-2 ps-2">
-              <div className="name pb-1">Meg Meyers </div>
+            <div className="pt-2 ps-2 menu-top">
+              <div className="name pb-1 ">Meg Meyers </div>
               <p>Tutoring Services</p>
             </div>
             <div>

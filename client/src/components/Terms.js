@@ -37,7 +37,7 @@ function Terms() {
             <p className="em">
               This site is constantly under construction, so please report errors, problems
               or recommendations for improvement using the contact form! I would appreciate it!</p>
-              Background images are not clickable yet, but will be soon.
+        
           </div>
 
   );

@@ -11,6 +11,9 @@ import SecondDrawer from "./SecondDrawer";
 import MX from "../assets/musicxpansion.png";
 import Cat from "../assets/word-guess.png";
 import Crave from '../assets/crave.png'
+import Portfolio from '../assets/portfolio.png'
+import Lego from '../assets/lego.png'
+import Car from '../assets/car.png'
 
 function Container({ }) {
   const [idx, setIdx] = useState(0)
@@ -29,7 +32,7 @@ function Container({ }) {
 
 
   const update = () => {
-    if (idx === 2) {
+    if (idx === 5) {
       setIdx(0);
       return;
     }
@@ -45,6 +48,13 @@ function Container({ }) {
         return Cat
       case 2:
         return Crave
+      case 3:
+        return Portfolio
+      case 4:
+        return Lego
+      case 5:
+        return Car
+    
       default:
         return null;
     }
@@ -75,7 +85,7 @@ function Container({ }) {
         <Route
           path="/about"
           element={
-            <SecondDrawer Componenent={About} width="600px" opacity=".9" />
+            <SecondDrawer Componenent={About} width="500px" opacity=".9" />
           }
         />
         <Route path="/schedule" element={<Calendly />} />
