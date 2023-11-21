@@ -10,43 +10,66 @@ import Privacy from "./PrivacyPolicy";
 import SecondDrawer from "./SecondDrawer";
 import MX from "../assets/musicxpansion.png";
 import Cat from "../assets/word-guess.png";
+import Crave from '../assets/crave.png'
 
-function Container({}) {
-  const [background, setBackground] = useState(MX);
+function Container({ }) {
+  const [idx, setIdx] = useState(0)
 
-  // var images = [MX, Cat];
+  useEffect(() => {
+
+    const interval = setInterval(() => {
+      update()
+    }, 8000);
+    return () => {
+      clearInterval(interval)
+    }
+
+
+  }, [idx]);
+
+
+  const update = () => {
+    if (idx === 2) {
+      setIdx(0);
+      return;
+    }
+    setIdx(prev => prev + 1)
+  };
+
+
+  const background = () => {
+    switch (idx) {
+      case 0:
+        return MX
+      case 1:
+        return Cat
+      case 2:
+        return Crave
+      default:
+        return null;
+    }
+  }
 
   const bg = {
-    backgroundImage: `url(${background})`,
+    backgroundImage: `url(${background()})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
   };
 
-  useEffect(() => {
-    const backgroundUpdate = () => {
-      console.log("test");
-      if (background === MX) setBackground(Cat)
-      else setBackground(MX)
-    };
-
-    setInterval(backgroundUpdate, 3000);
-  },[background]);
-
-  // need to make the background image change every 3 seconds.
   return (
-    <div style={bg} className="">
+    <div style={bg} className="trs">
       <Routes>
         <Route
           path="/"
           element={
-            <SecondDrawer Componenent={Terms} width="700px" opacity=".9" />
+            <SecondDrawer Componenent={Terms} width="700px" opacity=".95" />
           }
         />
         <Route
           path="/contact"
           element={
-            <SecondDrawer Componenent={ContactBS} width="650px" opacity="1" />
+            <SecondDrawer Componenent={ContactBS} width="650px" opacity=".9" />
           }
         />
         <Route

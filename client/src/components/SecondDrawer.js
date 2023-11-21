@@ -24,9 +24,9 @@ export default function SecondDrawer(props) {
             width: { md: window.innerWidth, lg: props.width },
             height: "100%",
             minHeight: "100vh",
-            maxHeight: "100vh",
+            maxHeight: "100%",
             p: 3,
-            overflowY: "auto",
+            overflowY: "hidden"
           }}
         >
           <Componenent />

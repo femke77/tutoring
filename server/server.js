@@ -21,17 +21,20 @@ const server = new ApolloServer({
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+// for heroku
 if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(__dirname, "../client/build")));
 }
 
+//for graphql and localhost
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/"));
 });
 
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "../client/build/index.html"));
-// });
+// for react-router-dom client routing
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
+});
 
 const startApolloServer = async (typeDefs, resolvers) => {
   await server.start();

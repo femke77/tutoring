@@ -14,6 +14,7 @@ export default function SecondDrawerButton(props) {
         p: 3,
         justifyContent: "center",
         alignItems: "center",
+        overflow: "hidden",
         display: {xs: "none", sm: "none", md: "flex"}
       }}
     >

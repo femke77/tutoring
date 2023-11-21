@@ -1,9 +1,12 @@
+
+
 html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   height: 100%;
+
 }
 
 #root {
@@ -14,7 +17,9 @@ body {
   font-family: 'Open Sans';
   background-image: url("./assets/bg4.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+
+  
+
 }
 
 h2 {
@@ -77,6 +82,10 @@ a:visited {
   color: white;
 }
 
+.about {
+  font-size: 13px;
+}
+
 .logo {
   height: 80px;
   width: 80px;
@@ -90,6 +99,7 @@ a:visited {
   font-family: 'Barlow', sans-serif;
   justify-content: space-between;
   height: 700px;
+  font-size: 13px;
 
 }
 
@@ -109,11 +119,15 @@ a:visited {
 .about,
 .terms,
 .contact {
-  margin-top: 160px;
+  margin-top: 140px;
   padding-bottom: 60px;
   color: #CCCCCC;
 }
 
+.contact {
+  margin-top: 100px;
+  font-size: 14px;
+}
 .calendar {
   padding: 125px 20px 0 20px;
 }
@@ -163,6 +177,15 @@ a:visited {
 .no-match>p {
   font-size: 36pt;
   margin-top: 2px;
+}
+
+/* fix background image flicker */
+.trs{
+  transition: background-image 1s ease-in-out;
+}
+
+.terms {
+  font-size: 14px;
 }
 
 

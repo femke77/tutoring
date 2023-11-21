@@ -32,6 +32,12 @@ function Terms() {
               or use my contact form. For urgent matters, please put "urgent" in
               the subject of the email.
             </p>
+            <br/>
+          
+            <p className="em">
+              This site is constantly under construction, so please report errors, problems
+              or recommendations for improvement using the contact form! I would appreciate it!</p>
+              Background images are not clickable yet, but will be soon.
           </div>
 
   );
