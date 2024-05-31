@@ -158,16 +158,16 @@ function ResponsiveDrawer() {
           {drawer}
         </Drawer>
 
-        <Box
+        {/* <Box
           component="main"
           sx={{
             flexGrow: 1,
             // p: 3,
-            width: { sm: `calc(100% - ${drawerWidth}px)` },
+            width: { sm: `calc(100% - ${drawerWidth})` },
           }}
-        ></Box>
+        ></Box> */}
       </Box>
-      <Box sx={{ ml: { sm: drawerWidth } }}>
+      <Box className="container-box" sx={{ ml: { sm: drawerWidth } }}>
         <Container />
       </Box>
     </>
