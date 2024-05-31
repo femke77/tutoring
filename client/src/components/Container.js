@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useLayoutEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Calendly from "./Calendly";
 import About from "./About";
@@ -18,21 +18,22 @@ import Car from '../assets/car.png'
 function Container() {
   const [idx, setIdx] = useState(0)
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     console.log(idx);
 
     const update = () => {
-      console.log("update called");
       setIdx(prev => ((prev === 4) ? 0 : prev + 1))
     };
+
     const interval = setInterval(() => {
       update()
     }, 8000);
+
     return () => {
       console.log("clear interval");
       clearInterval(interval)
     }
-  });
+  }, []);  
 
 
 
@@ -62,10 +63,12 @@ function Container() {
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
+  
+    transition: 'background-image 1.5s ease-in-out',
   };
 
   return (
-    <div style={bg} className="trs">
+    <div style={bg} className="">
       <Routes>
         <Route
           path="/"

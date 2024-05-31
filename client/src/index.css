@@ -196,7 +196,9 @@ a:visited {
 
 /* container bg transition */
 .trs {
-  transition: background-image 1s ease-in-out;
+  transition: background-image 2s ease-in-out;
+  -webkit-transition: background-image 2s ease-in-out;
+  
 }
 
 .terms {
