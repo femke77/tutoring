@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect } from "react";
+import { useState, useRef, useLayoutEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Calendly from "./Calendly";
 import About from "./About";
@@ -18,6 +18,7 @@ import Car from '../assets/car.png'
 function Container() {
   const images = [MX, Cat, Crave, Portfolio, Lego, Car]
   const [idx, setIdx] = useState(0)
+  const intervalRef = useRef(null)
 
   const bg = {
     backgroundImage: `url(${images[idx]})`,
@@ -26,21 +27,20 @@ function Container() {
     backgroundPosition: "center", 
     transition: 'background-image 1.5s linear',
   };
+
   const update = () => {
     setIdx(prev => ((prev === 5) ? 0 : prev + 1))
   };
 
   useLayoutEffect(() => {
     console.log(idx);
-
-
-    const interval = setInterval(() => {
+    intervalRef.current = setInterval(() => {
       update()
     }, 5000);
 
     return () => {
       console.log("clear interval");
-      clearInterval(interval)
+      clearInterval(intervalRef.current)
     }
   }, []);  
 
