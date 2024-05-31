@@ -8,43 +8,44 @@ import NoMatch from "./NoMatch";
 import Blog from "./Blog";
 import Privacy from "./PrivacyPolicy";
 import SecondDrawer from "./SecondDrawer";
-// import MX from "../assets/musicxpansion.png";
-// import Cat from "../assets/word-guess.png";
-// import Crave from '../assets/crave.png'
-// import Portfolio from '../assets/portfolio.png'
-// import Lego from '../assets/lego.png'
-// import Car from '../assets/car.png'
 
 function Container() {
-  const images = ["musicxpansion.png", "word-guess.png", "lego.png", "crave.png", "portfolio.png", "car.png"]
-  const [idx, setIdx] = useState(0)
-  const intervalRef = useRef(null)
+  const images = [
+    "musicxpansion.png",
+    "word-guess.png",
+    "lego.png",
+    "portfolio.png",
+    "crave.png",
+    "car.png",
+    "portfolio1.png"
+  ];
+  const intervalRef = useRef(null);
+  const [idx, setIdx] = useState(0);
+  const numImages = images.length;
 
   const bg = {
     backgroundImage: `url(/${images[idx]})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "center", 
-    transition: 'background-image 1.5s linear',
+    backgroundPosition: "center",
+    transition: "background-image 1.5s linear",
   };
-
-  const update = () => {
-    setIdx(prev => ((prev === images.length -1) ? 0 : prev + 1))
-  };
-
+  
   useEffect(() => {
 
-    console.log(idx);
+    const update = () => {
+      setIdx((prev) => (prev === numImages - 1 ? 0 : prev + 1));
+    };
+
     intervalRef.current = setInterval(() => {
-      update()
+      update();
     }, 5000);
 
     return () => {
       console.log("clear interval");
-      clearInterval(intervalRef.current)
-    }
-  }, []);  
-
+      clearInterval(intervalRef.current);
+    };
+  }, []);
 
   return (
     <div style={bg}>
