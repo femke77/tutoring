@@ -1,4 +1,4 @@
-import { useEffect, useState, useLayoutEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Calendly from "./Calendly";
 import About from "./About";
@@ -16,18 +16,27 @@ import Lego from '../assets/lego.png'
 import Car from '../assets/car.png'
 
 function Container() {
+  const images = [MX, Cat, Crave, Portfolio, Lego, Car]
   const [idx, setIdx] = useState(0)
+
+  const bg = {
+    backgroundImage: `url(${images[idx]})`,
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center", 
+    transition: 'background-image 1.5s linear',
+  };
 
   useLayoutEffect(() => {
     console.log(idx);
 
     const update = () => {
-      setIdx(prev => ((prev === 4) ? 0 : prev + 1))
+      setIdx(prev => ((prev === 5) ? 0 : prev + 1))
     };
 
     const interval = setInterval(() => {
       update()
-    }, 8000);
+    }, 5000);
 
     return () => {
       console.log("clear interval");
@@ -35,37 +44,6 @@ function Container() {
     }
   }, []);  
 
-
-
-  const background = () => {
-    console.log("background called");
-    switch (idx) {
-      case 0:
-        return MX
-      case 1:
-        return Cat
-      case 2:
-        return Crave
-      case 3:
-        return Portfolio
-      case 4:
-        return Lego
-      case 5:
-        return Car
-
-      default:
-        return null;
-    }
-  }
-
-  const bg = {
-    backgroundImage: `url(${background()})`,
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-  
-    transition: 'background-image 1.5s ease-in-out',
-  };
 
   return (
     <div style={bg} className="">
