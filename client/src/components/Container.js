@@ -26,13 +26,13 @@ function Container() {
     backgroundPosition: "center", 
     transition: 'background-image 1.5s linear',
   };
+  const update = () => {
+    setIdx(prev => ((prev === 5) ? 0 : prev + 1))
+  };
 
   useLayoutEffect(() => {
     console.log(idx);
 
-    const update = () => {
-      setIdx(prev => ((prev === 5) ? 0 : prev + 1))
-    };
 
     const interval = setInterval(() => {
       update()
@@ -46,7 +46,7 @@ function Container() {
 
 
   return (
-    <div style={bg} className="">
+    <div style={bg}>
       <Routes>
         <Route
           path="/"
