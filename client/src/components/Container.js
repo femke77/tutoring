@@ -17,7 +17,7 @@ function Container() {
     "portfolio.png",
     "crave.png",
     "car.png",
-    "portfolio1.png"
+    "portfolio1.png",
   ];
   const intervalRef = useRef(null);
   const [idx, setIdx] = useState(0);
@@ -30,9 +30,8 @@ function Container() {
     backgroundPosition: "center",
     transition: "background-image 1.5s linear",
   };
-  
-  useEffect(() => {
 
+  useEffect(() => {
     const update = () => {
       setIdx((prev) => (prev === numImages - 1 ? 0 : prev + 1));
     };
@@ -73,7 +72,7 @@ function Container() {
         <Route
           path="/privacy"
           element={
-            <SecondDrawer Componenent={Privacy} width="750px" opacity=".9" overflowY="scroll"/>
+            <SecondDrawer Componenent={Privacy} width="750px" opacity=".9" />
           }
         />
         <Route path="*" element={<NoMatch />} />

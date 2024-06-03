@@ -25,7 +25,10 @@ export default function SecondDrawer(props) {
             minHeight: "100vh",
             maxHeight: "100vh",
             p: 3,
-            overflowY: props.overflowY,
+            overflowY: "scroll",
+            "&::-webkit-scrollbar": {
+              display: "none", // Hide the scrollbar for WebKit browsers (Chrome, Safari, Edge, etc.)
+            },
           }}
         >
           <Componenent />

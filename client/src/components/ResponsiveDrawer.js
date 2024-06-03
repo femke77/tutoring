@@ -28,7 +28,7 @@ function ResponsiveDrawer() {
   const drawer = (
     <div className="">
       <Toolbar />
-      <div className="p-3 pt-0 pb-2 menu-top">
+      <div className="p-3 pt-0 pb-1 menu-top">
         <h1>Meg Meyers</h1>
         <h3>Tutoring Services</h3>
       </div>

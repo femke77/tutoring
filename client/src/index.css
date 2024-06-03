@@ -88,12 +88,8 @@ a:visited {
 .content {
   color: #CCCCCC;
   background-color: #2C2729;
-  background-image: url("./assets/musicxpansion.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   height: 100vh;
-  min-height: 100%;
+  min-height: 100vh;
 
 }
 
