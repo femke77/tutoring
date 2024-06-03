@@ -17,7 +17,7 @@ function ResponsiveDrawer() {
     const script = document.createElement("script");
     script.src = "//cdn.credly.com/assets/utilities/embed.js";
     document.body.appendChild(script);
-  });
+  },[]);
 
   const [mobileOpen, setMobileOpen] = useState(false);
 

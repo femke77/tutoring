@@ -3,7 +3,6 @@ import { Box } from "@mui/material";
 import Collapse from "@mui/material/Collapse";
 import SecondDrawerButton from "./SecondDrawerButton";
 
-// Template only - refactor with pages cuz too much code repeating
 export default function SecondDrawer(props) {
   const { Componenent } = props;
   const [open, setOpen] = useState(true);
@@ -24,9 +23,9 @@ export default function SecondDrawer(props) {
             width: { md: window.innerWidth, lg: props.width },
             height: "100%",
             minHeight: "100vh",
-            maxHeight: "100%",
+            maxHeight: "100vh",
             p: 3,
-            overflowY: "hidden"
+            overflowY: props.overflowY,
           }}
         >
           <Componenent />

@@ -73,7 +73,7 @@ function Container() {
         <Route
           path="/privacy"
           element={
-            <SecondDrawer Componenent={Privacy} width="750px" opacity=".9" />
+            <SecondDrawer Componenent={Privacy} width="750px" opacity=".9" overflowY="scroll"/>
           }
         />
         <Route path="*" element={<NoMatch />} />
