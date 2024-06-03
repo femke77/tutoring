@@ -3,7 +3,8 @@ function Blog() {
   const bg = {
     backgroundImage: "none",
     backgroundColor: "gray",
-    height: "100vh"
+    height: "100vh",
+    color: "white"
   }
   return (
     <div style={bg} className="blog">
