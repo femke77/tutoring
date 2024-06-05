@@ -26,9 +26,13 @@ export default function SecondDrawer(props) {
             maxHeight: "100vh",
             p: 3,
             overflowY: "scroll",
+            scrollbarWidth: "none",
             "&::-webkit-scrollbar": {
               display: "none", // Hide the scrollbar for WebKit browsers (Chrome, Safari, Edge, etc.)
             },
+            '&-ms-overflow-style:': {
+              display: 'none', // Hide the scrollbar for IE
+          },
           }}
         >
           <Componenent />

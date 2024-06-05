@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -7,17 +7,13 @@ import IconButton from "@mui/material/IconButton";
 import Container from "./Container";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
+import useScript from "./UseScript";
 import { Link } from "react-router-dom";
 
 function ResponsiveDrawer() {
-
   const drawerWidth = "260px";
 
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "//cdn.credly.com/assets/utilities/embed.js";
-    document.body.appendChild(script);
-  },[]);
+  useScript("//cdn.credly.com/assets/utilities/embed.js");
 
   const [mobileOpen, setMobileOpen] = useState(false);
 
