@@ -38,7 +38,7 @@
   Clone the repository, run the install command and then 'npm start'. Then navigate to the localhost port.
 
   ### Deployed Link
-  tbd
+  [https://heartfelt-kulfi-3d2f28.netlify.app/]("https://heartfelt-kulfi-3d2f28.netlify.app/)
 
 ### Screenshots
 ![screenshot-0](src/assets/images/tutoring.png)
