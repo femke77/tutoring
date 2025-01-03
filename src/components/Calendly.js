@@ -20,7 +20,7 @@ function Calendly() {
 
   return (
     <div style={bg} className="calendar">
-      {loading && <h2>Loading...</h2>}
+      {loading && <h2 style={{color: "white"}}>Loading...</h2>}
       <InlineWidget
         // styles={{
         //   height: "700px", width: "1500px"
