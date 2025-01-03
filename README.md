@@ -46,6 +46,7 @@
 ![screenshot-2](src/assets/images/calendly.png)
 ![screenshot-3](src/assets/images/contact.png)
 ![screenshot-4](src/assets/images/tutoring-mobile.png)
+
 ![screenshot-5](src/assets/images/mobile-2.png)
 
 
@@ -54,12 +55,12 @@ ________________________________________________________________________________
 
 
 ## Known Issues 
-none
+None
 
 
 
 ## Credits 
-Calendly API
+[Calendly API](https://developer.calendly.com/api-docs)
 
  ## Questions 
   
