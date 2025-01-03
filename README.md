@@ -1,11 +1,11 @@
-# Tutorin Business Application 
+# Tutoring Business Application 
   
 
    ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=for-the-badge&logo=mui&logoColor=white)
   
   ## Description  ✏️
   
-  I wrote this website to advertise my tutoring business and give students an easy waay to schedule with me using the integrated Calendly API
+  I wrote this website to advertise my tutoring business and give students an easy way to schedule with me using the integrated Calendly API. Built and styled with MUI. 
   
   ## Table of Contents 📖
   
@@ -17,9 +17,6 @@
 
   [Issues](#known-issues)
 
-  [Contributing](#how-to-contribute)
-
-  [Tests](#tests) 
 
   [Credits](#credits)
 
