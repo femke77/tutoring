@@ -44,6 +44,7 @@ function Container() {
       console.log("clear interval");
       clearInterval(intervalRef.current);
     };
+  // eslint-disable-next-line
   }, []);
 
   return (
