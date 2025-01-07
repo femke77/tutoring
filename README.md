@@ -57,7 +57,8 @@ None
 
 
 ## Credits 
-[Calendly API](https://developer.calendly.com/api-docs)
+[Calendly API](https://developer.calendly.com/api-docs) <br>
+Inspiration for the design on the website thanks to https://www.arbor-restaurant.co.uk/
 
  ## Questions 
   
